@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de productos destacados">
+    <title>Mi Tienda - E-commerce</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/img/logo.svg" alt="Logo de Mi Tienda">
+        </a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="filtros-titulo">
+            <h2 id="filtros-titulo">Filtros</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Categorías</legend>
+                    <label>
+                        <input type="checkbox" name="categoria" value="electronica">
+                        Electrónica
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="ropa">
+                        Ropa
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="hogar">
+                        Hogar
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="deportes">
+                        Deportes
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Precio</legend>
+                    <label for="precio-min">Precio mínimo</label>
+                    <input type="number" id="precio-min" name="precio_min" min="0" step="1">
+
+                    <label for="precio-max">Precio máximo</label>
+                    <input type="number" id="precio-max" name="precio_max" min="0" step="1">
+                </fieldset>
+
+                <label for="orden">Ordenar por</label>
+                <select id="orden" name="orden">
+                    <option value="relevancia">Relevancia</option>
+                    <option value="precio_asc">Precio: menor a mayor</option>
+                    <option value="precio_desc">Precio: mayor a menor</option>
+                </select>
+
+                <button type="submit">Aplicar filtros</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="productos-titulo">
+            <h1 id="productos-titulo">Productos destacados</h1>
+
+            <article>
+                <h2>Auriculares Inalámbricos</h2>
+                <img src="assets/img/producto-auriculares.svg" alt="Auriculares inalámbricos" width="300" height="300">
+                <p>Auriculares con cancelación de ruido y 30 horas de batería.</p>
+                <p>Precio: <strong>$89.990</strong></p>
+                <a href="#">Agregar al carrito</a>
+            </article>
+
+            <article>
+                <h2>Smartwatch Deportivo</h2>
+                <img src="assets/img/producto-smartwatch.svg" alt="Smartwatch deportivo" width="300" height="300">
+                <p>Monitor de ritmo cardíaco, GPS y resistencia al agua.</p>
+                <p>Precio: <strong>$129.990</strong></p>
+                <a href="#">Agregar al carrito</a>
+            </article>
+
+            <article>
+                <h2>Mochila Urbana</h2>
+                <img src="assets/img/producto-mochila.svg" alt="Mochila urbana" width="300" height="300">
+                <p>Mochila impermeable con compartimento para notebook de 15 pulgadas.</p>
+                <p>Precio: <strong>$49.990</strong></p>
+                <a href="#">Agregar al carrito</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces legales">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
