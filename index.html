@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi Tienda: tienda online con productos destacados, categorías y ofertas">
+    <title>Mi Tienda - E-commerce</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Mi Tienda</a></p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#destacados">Productos</a></li>
+                <li><a href="#filtros">Categorías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destacados" aria-labelledby="destacados-titulo">
+            <h1 id="destacados-titulo">Productos destacados</h1>
+
+            <ul>
+                <li>
+                    <article>
+                        <h2>Auriculares Inalámbricos</h2>
+                        <img src="assets/img/producto-auriculares.svg" alt="Auriculares inalámbricos" width="300" height="300">
+                        <p>Auriculares con cancelación de ruido y 30 horas de batería.</p>
+                        <p>Precio: <strong>$89.990</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Smartwatch Deportivo</h2>
+                        <img src="assets/img/producto-smartwatch.svg" alt="Smartwatch deportivo" width="300" height="300">
+                        <p>Monitor de ritmo cardíaco, GPS y resistencia al agua.</p>
+                        <p>Precio: <strong>$129.990</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Mochila Urbana</h2>
+                        <img src="assets/img/producto-mochila.svg" alt="Mochila urbana" width="300" height="300">
+                        <p>Mochila impermeable con compartimento para notebook de 15 pulgadas.</p>
+                        <p>Precio: <strong>$49.990</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <aside id="filtros" aria-labelledby="filtros-titulo">
+            <h2 id="filtros-titulo">Categorías y filtros</h2>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Categorías</legend>
+                    <label>
+                        <input type="checkbox" name="categoria" value="electronica">
+                        Electrónica
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="ropa">
+                        Ropa
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="hogar">
+                        Hogar
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="deportes">
+                        Deportes
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Precio</legend>
+                    <label for="precio-min">Precio mínimo</label>
+                    <input type="number" id="precio-min" name="precio_min" min="0" step="1">
+
+                    <label for="precio-max">Precio máximo</label>
+                    <input type="number" id="precio-max" name="precio_max" min="0" step="1">
+                </fieldset>
+
+                <label for="orden">Ordenar por</label>
+                <select id="orden" name="orden">
+                    <option value="relevancia">Relevancia</option>
+                    <option value="precio_asc">Precio: menor a mayor</option>
+                    <option value="precio_desc">Precio: mayor a menor</option>
+                </select>
+
+                <button type="submit">Aplicar filtros</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer id="contacto">
+        <address>
+            <p>Mi Tienda S.A.</p>
+            <p>Av. Siempre Viva 123, Ciudad</p>
+            <p>Email: <a href="mailto:contacto@mitienda.com">contacto@mitienda.com</a></p>
+            <p>Teléfono: <a href="tel:+541112345678">+54 11 1234-5678</a></p>
+        </address>
+
+        <nav aria-label="Enlaces legales">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Envíos y devoluciones</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
