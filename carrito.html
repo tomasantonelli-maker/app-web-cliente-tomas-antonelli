@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de compras de Mi Tienda con productos seleccionados y resumen de la compra">
+    <title>Carrito de compras - Mi Tienda</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Mi Tienda</a></p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#destacados">Productos</a></li>
+                <li><a href="index.html#filtros">Categorías</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="Migas de pan">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li aria-current="page">Carrito de compras</li>
+            </ul>
+        </nav>
+
+        <h1>Carrito de compras</h1>
+
+        <section aria-labelledby="articulos-titulo">
+            <h2 id="articulos-titulo">Artículos en tu carrito</h2>
+
+            <table>
+                <caption>Productos agregados al carrito</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio unitario</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notebook Lenovo IdeaPad 3</td>
+                        <td>$459.990</td>
+                        <td>1</td>
+                        <td>$459.990</td>
+                        <td><a href="#">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Monitor Samsung 24"</td>
+                        <td>$189.990</td>
+                        <td>1</td>
+                        <td>$189.990</td>
+                        <td><a href="#">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Teclado Mecánico Redragon</td>
+                        <td>$34.990</td>
+                        <td>1</td>
+                        <td>$34.990</td>
+                        <td><a href="#">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mouse Gamer Logitech G502</td>
+                        <td>$29.990</td>
+                        <td>2</td>
+                        <td>$59.980</td>
+                        <td><a href="#">Eliminar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="resumen-titulo">
+            <h2 id="resumen-titulo">Resumen de la compra</h2>
+
+            <dl>
+                <dt>Subtotal</dt>
+                <dd>$744.950</dd>
+
+                <dt>Envío</dt>
+                <dd>$5.990</dd>
+
+                <dt>Total</dt>
+                <dd><strong>$750.940</strong></dd>
+            </dl>
+
+            <p><a href="contacto.html">¿Tenés una consulta sobre tu pedido?</a></p>
+            <p><a href="index.html#destacados">Seguir comprando</a></p>
+        </section>
+
+        <section aria-labelledby="checkout-titulo">
+            <h2 id="checkout-titulo">Finalizar compra</h2>
+            <p>Completá tus datos para procesar el pedido y elegí el método de pago.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de envío</legend>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
+
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+
+                    <label for="codigo-postal">Código postal</label>
+                    <input type="text" id="codigo-postal" name="codigo_postal" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Método de pago</legend>
+
+                    <label>
+                        <input type="radio" name="pago" value="tarjeta" checked>
+                        Tarjeta de crédito o débito
+                    </label>
+                    <label>
+                        <input type="radio" name="pago" value="transferencia">
+                        Transferencia bancaria
+                    </label>
+                </fieldset>
+
+                <button type="submit">Confirmar pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <address>
+            <p>Mi Tienda S.A.</p>
+            <p>Av. Siempre Viva 123, Ciudad</p>
+            <p>Email: <a href="mailto:contacto@mitienda.com">contacto@mitienda.com</a></p>
+            <p>Teléfono: <a href="tel:+541112345678">+54 11 1234-5678</a></p>
+        </address>
+
+        <nav aria-label="Enlaces legales">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Envíos y devoluciones</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
