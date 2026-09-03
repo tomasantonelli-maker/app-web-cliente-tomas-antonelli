@@ -9,3 +9,5 @@ Predicciones
 4- quiero crear pantalla de carrito y contacto del eccomerce.
 
 5- voy a modificar algunos apartados en general de la pagina, como el titulo de la web, precios de los productos, agregar imagenes de los productos y ajustar el tamaño de las imagenes (sin usar un prompt).
+
+-6 quiero crear la pagina del detalle de cada producto ya que anteriormente me hizo solo de un producto no de todos
