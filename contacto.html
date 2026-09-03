@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto con Mi Tienda: formulario de consulta y datos de la empresa">
+    <title>Contacto - Mi Tienda</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Mi Tienda</a></p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#destacados">Productos</a></li>
+                <li><a href="index.html#filtros">Categorías</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="Migas de pan">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li aria-current="page">Contacto</li>
+            </ul>
+        </nav>
+
+        <section aria-labelledby="contacto-titulo">
+            <h1 id="contacto-titulo">Contacto de clientes</h1>
+            <p>
+                Si tenés alguna consulta sobre tus pedidos, entregas, devoluciones o necesitás
+                asistencia con un producto, completá el siguiente formulario y te responderemos
+                a la brevedad.
+            </p>
+        </section>
+
+        <section aria-labelledby="formulario-titulo">
+            <h2 id="formulario-titulo">Formulario de consulta</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motivo del contacto</legend>
+
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Seleccioná un asunto</option>
+                        <option value="pedido">Consulta sobre mi pedido</option>
+                        <option value="envio">Estado del envío</option>
+                        <option value="devolucion">Devolución o cambio</option>
+                        <option value="producto">Consulta sobre un producto</option>
+                        <option value="facturacion">Facturación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Cómo preferís que te respondamos?</legend>
+
+                    <label>
+                        <input type="radio" name="canal" value="email" checked>
+                        Por correo electrónico
+                    </label>
+                    <label>
+                        <input type="radio" name="canal" value="telefono">
+                        Por teléfono
+                    </label>
+                </fieldset>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="datos-titulo">
+            <h2 id="datos-titulo">Otras vías de contacto</h2>
+
+            <address>
+                <p><strong>Mi Tienda S.A.</strong></p>
+                <p>Av. Siempre Viva 123, Ciudad</p>
+                <p>Email: <a href="mailto:contacto@mitienda.com">contacto@mitienda.com</a></p>
+                <p>Teléfono: <a href="tel:+541112345678">+54 11 1234-5678</a></p>
+            </address>
+
+            <section aria-labelledby="horarios-titulo">
+                <h3 id="horarios-titulo">Horarios de atención</h3>
+                <p>Lunes a viernes de 9:00 a 18:00 hs.</p>
+                <p>Sábados de 10:00 a 14:00 hs.</p>
+            </section>
+
+            <section aria-labelledby="sucursales-titulo">
+                <h3 id="sucursales-titulo">Nuestras sucursales</h3>
+                <ul>
+                    <li>Casa central: Av. Siempre Viva 123, Ciudad</li>
+                    <li>Sucursal norte: Av. Del Libertador 4560, Ciudad</li>
+                    <li>Sucursal sur: Av. San Martín 789, Ciudad</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <address>
+            <p>Mi Tienda S.A.</p>
+            <p>Av. Siempre Viva 123, Ciudad</p>
+            <p>Email: <a href="mailto:contacto@mitienda.com">contacto@mitienda.com</a></p>
+            <p>Teléfono: <a href="tel:+541112345678">+54 11 1234-5678</a></p>
+        </address>
+
+        <nav aria-label="Enlaces legales">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Envíos y devoluciones</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
