@@ -13,3 +13,5 @@ Predicciones
 6-quiero crear la pagina del detalle de cada producto ya que anteriormente me hizo solo de un producto no de todos
 
 7-voy a eliminar y agregar categorias acorde a lo que vende en mi pagina web
+
+8-maquetar con los estilos principales header, catalogo, nav y footer
