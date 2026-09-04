@@ -15,3 +15,5 @@ Predicciones
 7-voy a eliminar y agregar categorias acorde a lo que vende en mi pagina web
 
 8-maquetar con los estilos principales header, catalogo, nav y footer
+
+9-voy a cambiar el nombre de algunos headers
