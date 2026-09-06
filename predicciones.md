@@ -17,3 +17,5 @@ Predicciones
 8-maquetar con los estilos principales header, catalogo, nav y footer
 
 9-voy a cambiar el nombre de algunos headers
+
+10-agrego mas productos con sus respectivas imagenes
