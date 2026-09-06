@@ -10,12 +10,14 @@ Predicciones
 
 5-voy a modificar algunos apartados en general de la pagina, como el titulo de la web, precios de los productos, agregar imagenes de los productos y ajustar el tamaño de las imagenes (sin usar un prompt).
 
-6-quiero crear la pagina del detalle de cada producto ya que anteriormente me hizo solo de un producto no de todos
+6-quiero crear la pagina del detalle de cada producto ya que anteriormente me hizo solo de un producto no de todos.
 
-7-voy a eliminar y agregar categorias acorde a lo que vende en mi pagina web
+7-voy a eliminar y agregar categorias acorde a lo que vende en mi pagina web.
 
-8-maquetar con los estilos principales header, catalogo, nav y footer
+8-maquetar con los estilos principales header, catalogo, nav y footer.
 
-9-voy a cambiar el nombre de algunos headers
+9-voy a cambiar el nombre de algunos headers.
 
-10-agrego mas productos con sus respectivas imagenes
+10-agrego mas productos con sus respectivas imagenes.
+
+11-quiero agregarle mi propio logo a mi pagina web.
