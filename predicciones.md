@@ -21,3 +21,7 @@ Predicciones
 10-agrego mas productos con sus respectivas imagenes.
 
 11-quiero agregarle mi propio logo a mi pagina web.
+
+12-quiero que al hacer clic en una categoría específica, la interfaz se actualice para mostrar únicamente los productos que pertenecen a esa categoría.
+
+13-voy a agregar mas productos con sus respectivas imagenes.
