@@ -26,11 +26,26 @@
     </header>
 
     <main>
+        <input type="radio" id="cat-todos" name="cat" value="todos" checked class="cat-input">
+        <input type="radio" id="cat-placas-de-video" name="cat" value="placas-de-video" class="cat-input">
+        <input type="radio" id="cat-procesadores" name="cat" value="procesadores" class="cat-input">
+        <input type="radio" id="cat-mothers" name="cat" value="mothers" class="cat-input">
+        <input type="radio" id="cat-memorias-ram" name="cat" value="memorias-ram" class="cat-input">
+        <input type="radio" id="cat-almacenamiento" name="cat" value="almacenamiento" class="cat-input">
+        <input type="radio" id="cat-gabinetes" name="cat" value="gabinetes" class="cat-input">
+        <input type="radio" id="cat-monitores" name="cat" value="monitores" class="cat-input">
+        <input type="radio" id="cat-refrigeracion" name="cat" value="refrigeracion" class="cat-input">
+        <input type="radio" id="cat-fuentes" name="cat" value="fuentes" class="cat-input">
+        <input type="radio" id="cat-sillas-gamers" name="cat" value="sillas-gamers" class="cat-input">
+        <input type="radio" id="cat-perifericos" name="cat" value="perifericos" class="cat-input">
+        <input type="radio" id="cat-audio-gamer" name="cat" value="audio-gamer" class="cat-input">
+        <input type="radio" id="cat-pcs-armadas" name="cat" value="pcs-armadas" class="cat-input">
+
         <section id="destacados" aria-labelledby="destacados-titulo">
             <h1 id="destacados-titulo">Productos destacados</h1>
 
             <ul>
-                <li>
+                <li data-categoria="pcs-armadas">
                     <article>
                         <h2><a href="producto.html#notebook">Notebook Lenovo IdeaPad 3</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQN4zLPpKdPINDLNvMM7uFzQ-FIOAVLSR-qe9oNSgKoCqqIrSl01u2w9Sd1VqfR2OSpoZ2U7SHkAIlJRfJi6sXDKC6uRz87Zu2ns6_QhU3UJTHjF8RlQqyVv8_DC5TSL33UMDsOzWOI_g&usqp=CAc" alt="Notebook Lenovo IdeaPad 3" width="180" height="180">
@@ -39,7 +54,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="monitores">
                     <article>
                         <h2><a href="producto.html#monitor">Monitor Samsung 24</a></h2>
                         <img src="https://images.fravega.com/f1000/32397e21c5240c13f2d32ad3842cd3e8.jpg" alt="Monitor Samsung 24 pulgadas" width="210" height="210">
@@ -48,7 +63,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="perifericos">
                     <article>
                         <h2><a href="producto.html#teclado">Teclado Mecánico Redragon</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_8903_Teclado_Mecanico_Redragon_Kumara_K552_RGB_Outemu_Red_ESP_2e7c11dd-grn.jpg" alt="Teclado mecánico Redragon" width="200" height="200">
@@ -57,7 +72,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="perifericos">
                     <article>
                         <h2><a href="producto.html#mouse">Mouse Gamer Logitech G203</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36943_Mouse_Logitech_G203_Lightsync_RGB_White_e2e81b78-grn.jpg" alt="Mouse Gamer Logitech G203" width="170" height="170">
@@ -66,7 +81,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="almacenamiento">
                     <article>
                         <h2><a href="producto.html#ssd">Disco SSD Kingston 480GB</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_9238_Disco_S__lido_SSD_Kingston_480GB_A400_500MB_s_fe39619d-grn.jpg" alt="Disco SSD Kingston 480GB" width="150" height="150">
@@ -75,7 +90,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="memorias-ram">
                     <article>
                         <h2><a href="producto.html#ram">Memoria RAM Corsair 16GB</a></h2>
                         <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTEDQfpYjEgcE_LkXSzKCeNNmDyN3cL7Yhzlbl9sTV1ZDlMwJkMq7Qz8LL-6I0rUPeWVcmPoBHoESk5aFnW5Op2XXfpUOzQCDNm3bXkg6fOeEpg79qFN26naQ" alt="Memoria RAM Corsair 16GB" width="200" height="110">
@@ -84,7 +99,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="procesadores">
                     <article>
                         <h2><a href="producto.html#procesador">Procesador AMD Ryzen 5 5600X</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQtZhLHBitjMKs8hykImy5_YN1o8MB0RFhhyvrjFnqg&s=10" alt="Procesador AMD Ryzen 5 5600X" width="170" height="170">
@@ -93,7 +108,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="placas-de-video">
                     <article>
                         <h2><a href="producto.html#placa">Placa de Video NVIDIA RTX 3060</a></h2>
                         <img src="https://app.contabilium.com/files/explorer/48428/Productos-Servicios/concepto-17822389.png" alt="Placa de video NVIDIA RTX 3060" width="200" height="200">
@@ -102,7 +117,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="fuentes">
                     <article>
                         <h2><a href="producto.html#fuente">Fuente de Poder Corsair 650W</a></h2>
                         <img src="https://fullh4rd.com.ar/img/productos/26/fuente-650w-corsair-cv650-80-plus-bronze-0.jpg" alt="Fuente de poder Corsair 650W" width="200" height="200">
@@ -111,7 +126,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="audio-gamer">
                     <article>
                         <h2><a href="producto.html#auriculares">Auriculares HyperX Cloud II</a></h2>
                         <img src="https://http2.mlstatic.com/D_633053-MLA89581911482_082025-C.jpg" alt="Auriculares HyperX Cloud II" width="200" height="200">
@@ -120,7 +135,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="sillas-gamers">
                     <article>
                         <h2><a href="producto.html#silla-gamer">Silla Gamer AKRacing Core EX</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyCCzriC2IVREgpRGCumO56gj-84BB3KwiLQFMllS6w&s=10" alt="Silla Gamer AKRacing Core EX" width="150" height="150">
@@ -129,7 +144,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="monitores">
                     <article>
                         <h2><a href="producto.html#monitor-gamer">Monitor Gamer LG UltraGear 27" 165Hz</a></h2>
                         <img src="https://img.inovamusicnet.com/p/cmo9b2f0k0axe04kyxbhytotw/f54547fa50348f3f/640" alt="Monitor Gamer LG UltraGear 27 pulgadas" width="200" height="200">
@@ -138,7 +153,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="placas-de-video">
                     <article>
                         <h2><a href="producto.html#rtx4070">Placa de Video RTX 4070 12GB</a></h2>
                         <img src="https://m.media-amazon.com/images/I/71liIYrRmkL._SY800_.jpg" alt="Placa de video NVIDIA RTX 4070 12GB" width="00" height="000">
@@ -147,7 +162,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="procesadores">
                     <article>
                         <h2><a href="producto.html#ryzen7">Procesador Ryzen 7 7800X3D</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36870_Procesador_AMD_Ryzen_7_7800X3D_5.0GHz_Turbo_AM5_-_No_incluye_cooler_ce1f39a0-grn.jpg" alt="Procesador AMD Ryzen 7 7800X3D" style="width:150px;height:150px;">
@@ -156,7 +171,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="mothers">
                     <article>
                         <h2><a href="producto.html#mother">Motherboard MSI B550 Gaming Plus</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_926704-MLA99865311281_112025-F.webp" alt="Motherboard MSI B550 Gaming Plus" width="200" height="200">
@@ -165,7 +180,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="memorias-ram">
                     <article>
                         <h2><a href="producto.html#ram-ddr5">Memoria RAM DDR5 32GB RGB</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_620660-CBT116207550443_082026-F.webp" alt="Memoria RAM DDR5 Corsair Vengeance RGB 32GB" width="200" height="200">
@@ -174,7 +189,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="almacenamiento">
                     <article>
                         <h2><a href="producto.html#ssd-nvme">SSD NVMe Samsung 980 Pro 1TB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTKJjUYvDOGGss7zqIsFlBgzDZjHL979tx05AyjaNNn0CefSVO-BEQqwV5SVFVth0Comqjq5Om7YNa6nPLknVGvSjX9mOYYGnAwxMayUI0dZUyksvABlBu" alt="SSD NVMe Samsung 980 Pro 1TB" width="200" height="200">
@@ -183,7 +198,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="gabinetes">
                     <article>
                         <h2><a href="producto.html#gabinete">Gabinete Gamer NZXT H5 Flow RGB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTS86BrhQi4C5rK6YZAhHueD9wgdtEOIDtwXSxH83LqaQOeGsj5AUiJOazl3oePAZ7wSOkxqVKbVHyhabT6EuPN75FPgaRdn_Mvr6y69UoX3Yovomb9l9RRVQ" alt="Gabinete Gamer NZXT H5 Flow RGB" width="200" height="200">
@@ -192,7 +207,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="refrigeracion">
                     <article>
                         <h2><a href="producto.html#refrigeracion">Refrigeración Líquida Corsair H150i</a></h2>
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQVCUjV71EOJ41z2GASIeQT4_dQds38X_kKt-e7LrsdDuPORsGVO2M8pjQeO8tSZstQBwVt08TtZLSjl-9cACgexGCvGN3lwJT4ueIbvyw" alt="Refrigeración líquida Corsair H150i 360mm" width="200" height="200">
@@ -201,7 +216,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="audio-gamer">
                     <article>
                         <h2><a href="producto.html#microfono">Micrófono HyperX QuadCast S</a></h2>
                         <img src="https://acdn-us.mitiendanube.com/stores/004/527/491/products/21588-73a841853adbdca37e17647823277745-1024-1024.webp" alt="Micrófono HyperX QuadCast S RGB" width="200" height="200">
@@ -210,7 +225,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="perifericos">
                     <article>
                         <h2><a href="producto.html#mousepad">Mousepad Gamer RGB XL</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33079_Mouse_Pad_Corsair_MM700_RGB_Extended_XL_930x400x4mm_517ba300-grn.jpg" alt="Mousepad gamer Redragon RGB XL" width="200" height="200">
@@ -219,7 +234,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="pcs-armadas">
                     <article>
                         <h2><a href="producto.html#pc-gamer">PC Gamer Armada Ryzen 7 + RTX 4060</a></h2>
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQIBB-gnJR9y7apyY7buThgkcxv3Eqi7RevAJff46nzqdqmpA1-WBZGFynt5fXJY6t2gNVuzmg_3lPelSXctyV4-bi3m8tqGLY6URqkjf2fm2eSFS9CaMLrQQ" alt="PC Gamer Armada Ryzen 7 con RTX 4060" width="200" height="200">
@@ -228,7 +243,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li>
+                <li data-categoria="perifericos">
                     <article>
                         <h2><a href="producto.html#teclado-hyperx">Teclado Gamer HyperX Alloy Origins</a></h2>
                         <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR_P65q734r0bZ4rp34lqE_GYP7OuApT_C8lUK1Sq8iYv9dmQJW0ZjFmQ56dybvlLgt6fejdVRTYW05U29joRa-_kDPrAaCJDMBced1SmujCxZp8aTYWR-p" alt="Teclado gamer HyperX Alloy Origins Core" width="200" height="200">
@@ -237,98 +252,1199 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx3060ti">Placa de Video NVIDIA RTX 3060 Ti</a></h2>
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTOFKhlz48SZziVxk_8GOZPzIno28pY1zbZJzT8vWT1-2zOZNsWGWLMtvqmJNYPTy3FBpIZXaEKUs6yFKsf91J2h7NbOOLMA" alt="Placa de Video NVIDIA RTX 3060 Ti" width="200" height="200">
+                        <p>GPU NVIDIA RTX 3060 Ti con 8GB GDDR6, rendimiento para 1080p y 1440p.</p>
+                        <p>Precio: <strong>$496.956</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx4060">Placa de Video NVIDIA RTX 4060</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQF6vXAVjWl1i6NtjHIL5zjX5iRwFYkOE_5YzNEEntw&s=10" alt="Placa de Video NVIDIA RTX 4060" width="200" height="200">
+                        <p>GPU NVIDIA RTX 4060 con 8GB GDDR6, DLSS 3 y Ray Tracing.</p>
+                        <p>Precio: <strong>$134.902</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rx7900xtx">Placa de Video AMD RX 7900 XTX</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjbeXWvGMX5K9-5y00H6oUhA3ynjNKeTXUbqDh2z8d0A&s=10" alt="Placa de Video AMD RX 7900 XTX" width="200" height="200">
+                        <p>GPU AMD RDNA 3 con 24GB GDDR6, rendimiento 4K superior.</p>
+                        <p>Precio: <strong>$1.183.556</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx3080">Placa de Video NVIDIA RTX 3080</a></h2>
+                        <img src="https://statics2.qloud.com.ar/274/03-09-2024-10-09-54_1.png" alt="Placa de Video NVIDIA RTX 3080" width="200" height="200">
+                        <p>GPU NVIDIA RTX 3080 con 10GB GDDR6X, ideal para 1440p.</p>
+                        <p>Precio: <strong>$1.057.150</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx4080super">Placa de Video NVIDIA RTX 4080 Super</a></h2>
+                        <img src="https://gorilagames.com/img/Public/1019/56633-producto-placa-video-asus-rog-strix-geforce-4080-super-16gb-gorila-games-1.jpg " alt="Placa de Video NVIDIA RTX 4080 Super" width="200" height="200">
+                        <p>GPU Ada Lovelace con 16GB GDDR6X, DLSS 3 y Ray Tracing.</p>
+                        <p>Precio: <strong>$966.213</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rx7800xt">Placa de Video AMD RX 7800 XT</a></h2>
+                        <img src="https://pg.asrock.com/Graphics-Card/photo/Radeon%20RX%207800%20XT%20Phantom%20Gaming%2016GB%20OC(L1).png" alt="Placa de Video AMD RX 7800 XT" width="200" height="200">
+                        <p>GPU AMD RDNA 3 con 16GB GDDR6, excelente relacion precio-rendimiento.</p>
+                        <p>Precio: <strong>$615.264</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx3070ti">Placa de Video NVIDIA RTX 3070 Ti</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOYqRlr9Mbu3hQI2Zg6axgWzjfYmCFDSwNHDY7_8w4g&s=10" width="200" height="200">
+                        <p>GPU NVIDIA RTX 3070 Ti con 8GB GDDR6X, rendimiento premium 1080p.</p>
+                        <p>Precio: <strong>$459.895</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx4090">Placa de Video NVIDIA RTX 4090</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX87Z95vSv7-scsUfLh47ic4RuKGv9OzaLu-FdSu9tQ&s=10" width="200" height="200">
+                        <p>GPU NVIDIA RTX 4090 con 24GB GDDR6X, maximo rendimiento 4K.</p>
+                        <p>Precio: <strong>$2.317.433</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rx7600">Placa de Video AMD RX 7600</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--QGoKwfMoDB_PrVKwoA8L8NtLfZEANRv_sfEUjR_HA&s" alt="Placa de Video AMD RX 7600" width="200" height="200">
+                        <p>GPU AMD RDNA 3 con 8GB GDDR6, ideal para 1080p gaming.</p>
+                        <p>Precio: <strong>$394.647</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="placas-de-video">
+                    <article>
+                        <h2><a href="producto.html#rtx3050">Placa de Video NVIDIA RTX 3050</a></h2>
+                        <img src="https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/912-V812-060.jpg" alt="Placa de Video NVIDIA RTX 3050" width="200" height="200">
+                        <p>GPU NVIDIA RTX 3050 con 8GB GDDR6, entrada a Ray Tracing.</p>
+                        <p>Precio: <strong>$1.799.668</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#ryzen57600x">Procesador AMD Ryzen 5 7600X</a></h2>
+                        <img src="https://katech.com.ar/wp-content/uploads/CPU165-jpg-webp.webp" alt="Procesador AMD Ryzen 5 7600X" width="200" height="200">
+                        <p>CPU AMD Zen 4 de 6 n�cleos y 12 hilos, AM5, excelente gaming.</p>
+                        <p>Precio: <strong>$163.306</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#ryzen97950x">Procesador AMD Ryzen 9 7950X</a></h2>
+                        <img src="https://fullh4rd.com.ar/img/productos/1/micro-amd-ryzen-9-7950x-cvideo-scooler-am5-0.jpg" alt="Procesador AMD Ryzen 9 7950X" width="200" height="200">
+                        <p>CPU AMD Zen 4 de 16 n�cleos y 32 hilos, productividad y gaming.</p>
+                        <p>Precio: <strong>$154.978</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#i713700k">Procesador Intel Core i7-13700K</a></h2>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_696551-MLA52678939884_122022-O.webp" alt="Procesador Intel Core i7-13700K" width="200" height="200">
+                        <p>CPU Intel de 16 hilos (8P+8E), overclockable, potente.</p>
+                        <p>Precio: <strong>$422.986</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#ryzen75800x3d">Procesador AMD Ryzen 7 5800X3D</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbR2PDyBaS0CMfXASZ1qeK1ylL6Zr1V5wQLUv2kxcOEQ&s=10" alt="Procesador AMD Ryzen 7 5800X3D" width="200" height="200">
+                        <p>CPU AMD Zen 3 con 3D V-Cache, rey del gaming en AM4.</p>
+                        <p>Precio: <strong>$947.034</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#i913900k">Procesador Intel Core i9-13900K</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bQMbZ25HP5iRBLRRr9ZHXKica6oF96C3YiR0mIcfHg&s=10" alt="Procesador Intel Core i9-13900K" width="200" height="200">
+                        <p>CPU Intel de 24 hilos, el mas potente para gaming y trabajo.</p>
+                        <p>Precio: <strong>$1.005.850</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#ryzen55600g">Procesador AMD Ryzen 5 5600G</a></h2>
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSn1hyEyPNy-jaQZbk8-o_kVXBH7yXFnC2sLtz1Y9g8Ig8d7hlPmwci_ERJWd0_u9US1lkb6nvtJnqRfFy7kfLDVVD1cBehcL7j7MBg0PzkEvetRgmh06NYbAhQjgB59RZ0PK_qEL8&usqp=CAc" alt="Procesador AMD Ryzen 5 5600G" width="200" height="200">
+                        <p>CPU AMD con graficos integrados Vega, sin GPU dedicada.</p>
+                        <p>Precio: <strong>$2.149.613</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#i513600k">Procesador Intel Core i5-13600K</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQNUoXLEILft00SVlTdAm1ROOyH5JpuyVGyZ544t3JQ&s=10" alt="Procesador Intel Core i5-13600K" width="200" height="200">
+                        <p>CPU Intel de 14 nucleos (6P+8E), excelente relacion precio.</p>
+                        <p>Precio: <strong>$141.299</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#ryzen97900x">Procesador AMD Ryzen 9 7900X</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFNYxv9DTdnB4TOqKmc_mQLpAbP4bw6hsAUP_8xDHFw&s=10" alt="Procesador AMD Ryzen 9 7900X" width="200" height="200">
+                        <p>CPU AMD Zen 4 de 12 nucleos y 24 hilos, AM5.</p>
+                        <p>Precio: <strong>$2.384.032</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#i712700k">Procesador Intel Core i7-12700K</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0sGpfVeGDWdGI06FMrRbDggM4lr20YG_HwwWKsn0STQ&s=10" alt="Procesador Intel Core i7-12700K" width="200" height="200">
+                        <p>CPU Intel Alder Lake de 20 hilos, excelente multitarea.</p>
+                        <p>Precio: <strong>$863.985</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="procesadores">
+                    <article>
+                        <h2><a href="producto.html#ryzen33100">Procesador AMD Ryzen 3 3100</a></h2>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_697104-MLA42919506689_072020-O.webp" alt="Procesador AMD Ryzen 3 3100" width="200" height="200">
+                        <p>CPU AMD Zen 2 de 4 nucleos y 8 hilos, basico para gaming.</p>
+                        <p>Precio: <strong>$2.315.650</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#asusb550f">Motherboard ASUS ROG Strix B550-F</a></h2>
+                        <img src="https://m.media-amazon.com/images/I/71j-fSHhvUL._AC_UF894,1000_QL80_.jpg" alt="Motherboard ASUS ROG Strix B550-F" width="200" height="200">
+                        <p>AM4 DDR4, PCIe 4.0, WiFi 6, VRM reforzado.</p>
+                        <p>Precio: <strong>$1.789.593</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#msix670e">Motherboard MSI MAG X670E Tomahawk</a></h2>
+                        <img src="https://http2.mlstatic.com/D_Q_NP_661295-MLA99371743164_112025-F.webp" alt="Motherboard MSI MAG X670E Tomahawk" width="200" height="200">
+                        <p>AM5 DDR5, PCIe 5.0, WiFi 6E, chipset X670E.</p>
+                        <p>Precio: <strong>$954.594</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#gigaz790">Motherboard Gigabyte Z790 AORUS Master</a></h2>
+                        <img src="https://http2.mlstatic.com/D_Q_NP_908007-MLA99414552960_112025-F.webp" alt="Motherboard Gigabyte Z790 AORUS Master" width="200" height="200">
+                        <p>LGA 1700 DDR5, PCIe 5.0, WiFi 6E, extreme gaming.</p>
+                        <p>Precio: <strong>$1.914.119</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#asrockb650e">Motherboard ASRock B650E Steel Legend</a></h2>
+                        <img src="https://www.venex.com.ar/products_images/1786560442_motherboard_asrock_b650_steel_legend_wifi_am5_ddr5_1png" alt="Motherboard ASRock B650E Steel Legend" width="200" height="200">
+                        <p>AM5 DDR5, PCIe 5.0, chipset B650E premium.</p>
+                        <p>Precio: <strong>$1.196.816</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#msib760">Motherboard MSI MAG B760 Tomahawk WiFi</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcmsib760&usqp=CAc" alt="Motherboard MSI MAG B760 Tomahawk WiFi" width="200" height="200">
+                        <p>LGA 1700 DDR4/DDR5, WiFi 6, chipset B760.</p>
+                        <p>Precio: <strong>$57.257</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#asustufx670e">Motherboard ASUS TUF Gaming X670E-Plus</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcasustufx670e&usqp=CAc" alt="Motherboard ASUS TUF Gaming X670E-Plus" width="200" height="200">
+                        <p>AM5 DDR5, PCIe 5.0, robustez militar, WiFi 6E.</p>
+                        <p>Precio: <strong>$699.659</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#gigab650">Motherboard Gigabyte B650 AORUS Elite AX</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcgigab650&usqp=CAc" alt="Motherboard Gigabyte B650 AORUS Elite AX" width="200" height="200">
+                        <p>AM5 DDR5, PCIe 4.0, WiFi 6, chipset B650.</p>
+                        <p>Precio: <strong>$1.802.573</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#asrockz690">Motherboard ASRock Z690 Taichi</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcasrockz690&usqp=CAc" alt="Motherboard ASRock Z690 Taichi" width="200" height="200">
+                        <p>LGA 1200 DDR5, PCIe 5.0, chipset Z690 premium.</p>
+                        <p>Precio: <strong>$1.457.114</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#msiz790g">Motherboard MSI MEG Z790 Godlike</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcmsiz790g&usqp=CAc" alt="Motherboard MSI MEG Z790 Godlike" width="200" height="200">
+                        <p>LGA 1700 DDR5, PCIe 5.0, WiFi 6E, tope de gama.</p>
+                        <p>Precio: <strong>$1.195.476</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="mothers">
+                    <article>
+                        <h2><a href="producto.html#asurogx670e">Motherboard ASUS ROG Strix X670E-E</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcasurogx670e&usqp=CAc" alt="Motherboard ASUS ROG Strix X670E-E" width="200" height="200">
+                        <p>AM5 DDR5, PCIe 5.0, chipset X670E, WiFi 6E.</p>
+                        <p>Precio: <strong>$682.128</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#kfd16gb">Memoria RAM Kingston Fury Beast 16GB DDR4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gckfd16gb&usqp=CAc" alt="Memoria RAM Kingston Fury Beast 16GB DDR4" width="200" height="200">
+                        <p>16GB DDR4 3200MHz, XMP habilitado, excelente gaming.</p>
+                        <p>Precio: <strong>$933.091</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#gskill32gb">Memoria RAM G.Skill Trident Z5 RGB 32GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcgskill32gb&usqp=CAc" alt="Memoria RAM G.Skill Trident Z5 RGB 32GB" width="200" height="200">
+                        <p>32GB (2x16GB) DDR5 6000MHz CL30, RGB, XMP 3.0.</p>
+                        <p>Precio: <strong>$1.441.779</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#crucial16gb">Memoria RAM Crucial DDR4 16GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccrucial16gb&usqp=CAc" alt="Memoria RAM Crucial DDR4 16GB" width="200" height="200">
+                        <p>16GB DDR4 3200MHz, modulo unico, compatible XMP.</p>
+                        <p>Precio: <strong>$458.700</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#corsair32ddr4">Memoria RAM Corsair Vengeance 32GB DDR4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsair32ddr4&usqp=CAc" alt="Memoria RAM Corsair Vengeance 32GB DDR4" width="200" height="200">
+                        <p>32GB (2x16GB) DDR4 3600MHz, RGB, perfil XMP.</p>
+                        <p>Precio: <strong>$419.004</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#kf32ddr5">Memoria RAM Kingston Fury Beast 32GB DDR5</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gckf32ddr5&usqp=CAc" alt="Memoria RAM Kingston Fury Beast 32GB DDR5" width="200" height="200">
+                        <p>32GB (2x16GB) DDR5 5600MHz CL36, RGB, XMP.</p>
+                        <p>Precio: <strong>$1.623.530</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#gskill64gb">Memoria RAM G.Skill Trident Z5 RGB 64GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcgskill64gb&usqp=CAc" alt="Memoria RAM G.Skill Trident Z5 RGB 64GB" width="200" height="200">
+                        <p>64GB (2x32GB) DDR5 6400MHz, RGB, overclock extremo.</p>
+                        <p>Precio: <strong>$435.657</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#crucial16ddr5">Memoria RAM Crucial DDR5 16GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccrucial16ddr5&usqp=CAc" alt="Memoria RAM Crucial DDR5 16GB" width="200" height="200">
+                        <p>16GB DDR5 4800MHz, modulo unico, compatibilidad AM5.</p>
+                        <p>Precio: <strong>$1.535.668</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#hyperx16gb">Memoria RAM HyperX Fury Beast 16GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gchyperx16gb&usqp=CAc" alt="Memoria RAM HyperX Fury Beast 16GB" width="200" height="200">
+                        <p>16GB DDR4 3200MHz, RGB, XMP, buena relacion precio.</p>
+                        <p>Precio: <strong>$1.472.654</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#teamgroup16gb">Memoria RAM TeamGroup T-Force Vulcan Z 16GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcteamgroup16gb&usqp=CAc" alt="Memoria RAM TeamGroup T-Force Vulcan Z 16GB" width="200" height="200">
+                        <p>16GB DDR4 3200MHz, sin RGB, rendimiento estable.</p>
+                        <p>Precio: <strong>$1.139.480</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="memorias-ram">
+                    <article>
+                        <h2><a href="producto.html#corsair64gb">Memoria RAM Corsair Dominator Platinum 64GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsair64gb&usqp=CAc" alt="Memoria RAM Corsair Dominator Platinum 64GB" width="200" height="200">
+                        <p>64GB (2x32GB) DDR5 6000MHz, Dominator, premium.</p>
+                        <p>Precio: <strong>$212.244</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#wd500gb">SSD Western Digital Black 500GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcwd500gb&usqp=CAc" alt="SSD Western Digital Black 500GB" width="200" height="200">
+                        <p>SSD NVMe Gen4, lectura secuencial 7300MB/s, 500GB.</p>
+                        <p>Precio: <strong>$1.956.967</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#seagate2tb">HDD Seagate Barracuda 2TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcseagate2tb&usqp=CAc" alt="HDD Seagate Barracuda 2TB" width="200" height="200">
+                        <p>Disco duro 3.5 2TB, 7200RPM, cache 256MB.</p>
+                        <p>Precio: <strong>$2.279.103</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#crucialmx500">SSD Crucial MX500 1TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccrucialmx500&usqp=CAc" alt="SSD Crucial MX500 1TB" width="200" height="200">
+                        <p>SSD SATA III 1TB, lectura 560MB/s, confiable.</p>
+                        <p>Precio: <strong>$553.558</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#wdblue4tb">HDD WD Blue 4TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcwdblue4tb&usqp=CAc" alt="HDD WD Blue 4TB" width="200" height="200">
+                        <p>Disco duro 3.5 4TB, 5400RPM, almacenamiento masivo.</p>
+                        <p>Precio: <strong>$1.617.688</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#sandisk1tb">SSD SanDisk Ultra 1TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcsandisk1tb&usqp=CAc" alt="SSD SanDisk Ultra 1TB" width="200" height="200">
+                        <p>SSD SATA III 1TB, lectura 550MB/s, precio accesible.</p>
+                        <p>Precio: <strong>$360.511</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#kbnv2500">SSD Kingston NV2 500GB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gckbnv2500&usqp=CAc" alt="SSD Kingston NV2 500GB" width="200" height="200">
+                        <p>SSD NVMe Gen4, 500GB, lectura 7400MB/s, presupuesto.</p>
+                        <p>Precio: <strong>$2.345.426</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#seagatefire2tb">HDD Seagate FireCuda 2TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcseagatefire2tb&usqp=CAc" alt="HDD Seagate FireCuda 2TB" width="200" height="200">
+                        <p>HDD hibrido 2TB con cache SSD, gaming.</p>
+                        <p>Precio: <strong>$1.259.678</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#crucialp3plus">SSD Crucial P3 Plus 2TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccrucialp3plus&usqp=CAc" alt="SSD Crucial P3 Plus 2TB" width="200" height="200">
+                        <p>SSD NVMe Gen4, 2TB, lectura 7000MB/s, alta capacidad.</p>
+                        <p>Precio: <strong>$1.546.807</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#wdsn770">WD Black SN770 1TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcwdsn770&usqp=CAc" alt="WD Black SN770 1TB" width="200" height="200">
+                        <p>SSD NVMe Gen4, 1TB, lectura 5150MB/s, gaming.</p>
+                        <p>Precio: <strong>$2.451.590</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="almacenamiento">
+                    <article>
+                        <h2><a href="producto.html#samsung870evo">SSD Samsung 870 EVO 2TB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcsamsung870evo&usqp=CAc" alt="SSD Samsung 870 EVO 2TB" width="200" height="200">
+                        <p>SSD SATA III 2TB, lectura 560MB/s, durabilidad.</p>
+                        <p>Precio: <strong>$836.516</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#corsair4000d">Gabinete Corsair 4000D Airflow</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsair4000d&usqp=CAc" alt="Gabinete Corsair 4000D Airflow" width="200" height="200">
+                        <p>Mid-tower con panel mesh, excelente flujo de aire, USB-C.</p>
+                        <p>Precio: <strong>$321.735</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#nzxt7flow">Gabinete NZXT H7 Flow</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcnzxt7flow&usqp=CAc" alt="Gabinete NZXT H7 Flow" width="200" height="200">
+                        <p>Mid-tower con vidrio templado, compacto, USB-C.</p>
+                        <p>Precio: <strong>$222.201</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#fractalmesh2">Gabinete Fractal Design Meshify 2</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcfractalmesh2&usqp=CAc" alt="Gabinete Fractal Design Meshify 2" width="200" height="200">
+                        <p>Full-tower con mesh, 7 ventiladores incluidos, premium.</p>
+                        <p>Precio: <strong>$985.874</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#lianliob11">Gabinete Lian Li O11 Dynamic EVO</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gclianliob11&usqp=CAc" alt="Gabinete Lian Li O11 Dynamic EVO" width="200" height="200">
+                        <p>Full-tower con panel dual mesh, elegante, modular.</p>
+                        <p>Precio: <strong>$1.243.781</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#coolermaster500">Gabinete Cooler Master TD500 Mesh</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccoolermaster500&usqp=CAc" alt="Gabinete Cooler Master TD500 Mesh" width="200" height="200">
+                        <p>Mid-tower con mesh, vidrio templado, USB-C.</p>
+                        <p>Precio: <strong>$364.671</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#phanteksp400a">Gabinete Phanteks Eclipse P400A</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcphanteksp400a&usqp=CAc" alt="Gabinete Phanteks Eclipse P400A" width="200" height="200">
+                        <p>Mid-tower con mesh, vidrio templado, dise�o premium.</p>
+                        <p>Precio: <strong>$1.006.395</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#bequiet500">Gabinete be quiet! Pure Base 500</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcbequiet500&usqp=CAc" alt="Gabinete be quiet! Pure Base 500" width="200" height="200">
+                        <p>Mid-tower con mesh, 3 ventiladores incluidos, silencioso.</p>
+                        <p>Precio: <strong>$453.630</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#ttversah18">Gabinete Thermaltake Versa H18</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcttversah18&usqp=CAc" alt="Gabinete Thermaltake Versa H18" width="200" height="200">
+                        <p>Full-tower con mesh, vidrio templado, expansion total.</p>
+                        <p>Precio: <strong>$1.624.364</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#deepcoolcc560">Gabinete Deepcool CC560</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcdeepcoolcc560&usqp=CAc" alt="Gabinete Deepcool CC560" width="200" height="200">
+                        <p>Mid-tower con mesh, panel frontal mesh, USB-C.</p>
+                        <p>Precio: <strong>$1.195.905</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="gabinetes">
+                    <article>
+                        <h2><a href="producto.html#jonsboc1000">Gabinete Jonsbo CR1000</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcjonsboc1000&usqp=CAc" alt="Gabinete Jonsbo CR1000" width="200" height="200">
+                        <p>Mini-tower compacto con mesh, dise�o minimalista.</p>
+                        <p>Precio: <strong>$1.931.740</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#asus27">Monitor ASUS TUF Gaming 27 165Hz</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcasus27&usqp=CAc" alt="Monitor ASUS TUF Gaming 27 165Hz" width="200" height="200">
+                        <p>QHD 165Hz, 1ms, FreeSync Premium, dise�o gaming.</p>
+                        <p>Precio: <strong>$1.560.217</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#acer27">Monitor Acer Nitro XV272U</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcacer27&usqp=CAc" alt="Monitor Acer Nitro XV272U" width="200" height="200">
+                        <p>QHD 170Hz, 1ms, IPS, AMD FreeSync Premium.</p>
+                        <p>Precio: <strong>$712.220</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#msi27c4">Monitor MSI Optix G27C4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcmsi27c4&usqp=CAc" alt="Monitor MSI Optix G27C4" width="200" height="200">
+                        <p>QHD 165Hz, curvatura 1000R, VA, FreeSync Premium.</p>
+                        <p>Precio: <strong>$1.582.651</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#dell27">Monitor Dell S2721DGF</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcdell27&usqp=CAc" alt="Monitor Dell S2721DGF" width="200" height="200">
+                        <p>QHD 165Hz, 1ms, IPS, AMD FreeSync Premium.</p>
+                        <p>Precio: <strong>$1.520.113</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#samsung27g5">Monitor Samsung Odyssey G5 27</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcsamsung27g5&usqp=CAc" alt="Monitor Samsung Odyssey G5 27" width="200" height="200">
+                        <p>QHD 165Hz, curvatura 1000R, VA, FreeSync Premium.</p>
+                        <p>Precio: <strong>$908.736</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#lg83q">Monitor LG UltraGear 27GR83Q</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gclg83q&usqp=CAc" alt="Monitor LG UltraGear 27GR83Q" width="200" height="200">
+                        <p>QHD 240Hz, 1ms, IPS, AMD FreeSync Premium, G-Sync.</p>
+                        <p>Precio: <strong>$1.149.786</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#hp27">Monitor HP Victus 27</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gchp27&usqp=CAc" alt="Monitor HP Victus 27" width="200" height="200">
+                        <p>QHD 165Hz, 1ms, IPS, AMD FreeSync Premium.</p>
+                        <p>Precio: <strong>$329.483</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#rog279qm">Monitor ASUS ROG Swift PG279QM</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrog279qm&usqp=CAc" alt="Monitor ASUS ROG Swift PG279QM" width="200" height="200">
+                        <p>QHD 240Hz, 1ms, IPS, G-Sync Compatible, premium.</p>
+                        <p>Precio: <strong>$747.807</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#benq2546">Monitor BenQ Zowie XL2546</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcbenq2546&usqp=CAc" alt="Monitor BenQ Zowie XL2546" width="200" height="200">
+                        <p>FHD 360Hz, 24.5, IPS, para esports profesional.</p>
+                        <p>Precio: <strong>$2.270.345</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="monitores">
+                    <article>
+                        <h2><a href="producto.html#aoc27">Monitor AOC 27G2SPU8</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcaoc27&usqp=CAc" alt="Monitor AOC 27G2SPU8" width="200" height="200">
+                        <p>QHD 170Hz, 1ms, IPS, FreeSync Premium.</p>
+                        <p>Precio: <strong>$1.056.811</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#nzxtx63">Refrigeracion NZXT Kraken X63 280</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcnzxtx63&usqp=CAc" alt="Refrigeracion NZXT Kraken X63 280" width="200" height="200">
+                        <p>AIO 280mm, bomba de cobre, 6 ventiladores RGB, iCUE.</p>
+                        <p>Precio: <strong>$715.359</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#arctic280">Refrigeracion Arctic Liquid Freezer II 280</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcarctic280&usqp=CAc" alt="Refrigeracion Arctic Liquid Freezer II 280" width="200" height="200">
+                        <p>AIO 280mm, bomba de cobre, silenciosa, eficiente.</p>
+                        <p>Precio: <strong>$1.968.859</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#dkak620">Refrigeracion DeepCool AK620</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcdkak620&usqp=CAc" alt="Refrigeracion DeepCool AK620" width="200" height="200">
+                        <p>Torre de aire dual fan, 6 heatpipes, buena refrigeracion.</p>
+                        <p>Precio: <strong>$1.621.551</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#bqdrp4">Refrigeracion be quiet! Dark Rock Pro 4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcbqdrp4&usqp=CAc" alt="Refrigeracion be quiet! Dark Rock Pro 4" width="200" height="200">
+                        <p>Torre de aire, 2 ventiladores, ultra silenciosa.</p>
+                        <p>Precio: <strong>$1.162.243</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#noctuad15">Refrigeracion Noctua NH-D15</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcnoctuad15&usqp=CAc" alt="Refrigeracion Noctua NH-D15" width="200" height="200">
+                        <p>Torre de aire premium, 2 ventiladores, excelente refrigeracion.</p>
+                        <p>Precio: <strong>$2.366.016</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#corsairh100i">Refrigeracion Corsair H100i</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsairh100i&usqp=CAc" alt="Refrigeracion Corsair H100i" width="200" height="200">
+                        <p>AIO 240mm, bomba de cobre, LED RGB, iCUE.</p>
+                        <p>Precio: <strong>$951.132</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#trpa120">Refrigeracion Thermalright Peerless Assassin 120</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gctrpa120&usqp=CAc" alt="Refrigeracion Thermalright Peerless Assassin 120" width="200" height="200">
+                        <p>Torre de aire dual tower, 2 ventiladores, economico.</p>
+                        <p>Precio: <strong>$1.390.140</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#dkak400">Refrigeracion DeepCool AK400</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcdkak400&usqp=CAc" alt="Refrigeracion DeepCool AK400" width="200" height="200">
+                        <p>Torre de aire, 4 heatpipes, silenciosa, economica.</p>
+                        <p>Precio: <strong>$264.620</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#arcticp12">Refrigeracion Arctic P12 PWM</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcarcticp12&usqp=CAc" alt="Refrigeracion Arctic P12 PWM" width="200" height="200">
+                        <p>Ventilador 120mm, PWM, ultra silencioso, 1500RPM.</p>
+                        <p>Precio: <strong>$990.697</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="refrigeracion">
+                    <article>
+                        <h2><a href="producto.html#noctuah12s">Refrigeracion Noctua NH-U12S</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcnoctuah12s&usqp=CAc" alt="Refrigeracion Noctua NH-U12S" width="200" height="200">
+                        <p>Torre de aire compacta, 1 ventilador Noctua premium.</p>
+                        <p>Precio: <strong>$164.638</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#evga750">Fuente EVGA SuperNOVA 750W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcevga750&usqp=CAc" alt="Fuente EVGA SuperNOVA 750W" width="200" height="200">
+                        <p>80 Plus Gold, 750W, modulares, garantia 10 anos.</p>
+                        <p>Precio: <strong>$1.353.105</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#seasongx850">Fuente SeaSonic Focus GX-850</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcseasongx850&usqp=CAc" alt="Fuente SeaSonic Focus GX-850" width="200" height="200">
+                        <p>80 Plus Gold, 850W, modulares, silenciosa.</p>
+                        <p>Precio: <strong>$1.712.607</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#corsairrm850">Fuente Corsair RM850</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsairrm850&usqp=CAc" alt="Fuente Corsair RM850" width="200" height="200">
+                        <p>80 Plus Gold, 850W, modulares completamente, 10 anos.</p>
+                        <p>Precio: <strong>$1.152.986</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#ttgf3750">Fuente Thermaltake Toughpower GF3 750W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcttgf3750&usqp=CAc" alt="Fuente Thermaltake Toughpower GF3 750W" width="200" height="200">
+                        <p>80 Plus Gold, 750W, semi-modulares, LED azul.</p>
+                        <p>Precio: <strong>$307.615</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#evga1000">Fuente EVGA SuperNOVA 1000W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcevga1000&usqp=CAc" alt="Fuente EVGA SuperNOVA 1000W" width="200" height="200">
+                        <p>80 Plus Platinum, 1000W, modulares, overclock.</p>
+                        <p>Precio: <strong>$914.926</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#bqsp12750">Fuente Be Quiet! Straight Power 12 750W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcbqsp12750&usqp=CAc" alt="Fuente Be Quiet! Straight Power 12 750W" width="200" height="200">
+                        <p>80 Plus Gold, 750W, modulares, ultra silenciosa.</p>
+                        <p>Precio: <strong>$2.408.925</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#corsaircx750">Fuente Corsair CX750M</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsaircx750&usqp=CAc" alt="Fuente Corsair CX750M" width="200" height="200">
+                        <p>80 Plus Bronze, 750W, semi-modulares, basica confiable.</p>
+                        <p>Precio: <strong>$1.349.854</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#seasonic850">Fuente Seasonic Focus Plus Gold 850W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcseasonic850&usqp=CAc" alt="Fuente Seasonic Focus Plus Gold 850W" width="200" height="200">
+                        <p>80 Plus Gold, 850W, modulares, fabricante OEM.</p>
+                        <p>Precio: <strong>$921.820</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#tt1200">Fuente Thermaltake Toughpower 1200W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gctt1200&usqp=CAc" alt="Fuente Thermaltake Toughpower 1200W" width="200" height="200">
+                        <p>80 Plus Titanium, 1200W, modulares, maxima potencia.</p>
+                        <p>Precio: <strong>$2.123.927</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="fuentes">
+                    <article>
+                        <h2><a href="producto.html#evgabq1000">Fuente EVGA BQ1000W</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcevgabq1000&usqp=CAc" alt="Fuente EVGA BQ1000W" width="200" height="200">
+                        <p>80 Plus Platinum, 1000W, modulares, gaming.</p>
+                        <p>Precio: <strong>$1.689.400</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#dxrformula">Silla DXRacer Formula Series</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcdxrformula&usqp=CAc" alt="Silla DXRacer Formula Series" width="200" height="200">
+                        <p>Silla ergonomica con reposacabezas y lumbares, mesh.</p>
+                        <p>Precio: <strong>$1.954.564</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#secretlab">Silla Secretlab Titan Evo 2022</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcsecretlab&usqp=CAc" alt="Silla Secretlab Titan Evo 2022" width="200" height="200">
+                        <p>Silla premium con aluminio, certificada por Max Napiorkowski.</p>
+                        <p>Precio: <strong>$629.246</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#hermanxlg">Silla Herman Miller X Logitech G</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gchermanxlg&usqp=CAc" alt="Silla Herman Miller X Logitech G" width="200" height="200">
+                        <p>Silla de dise�o, suspension adaptativa, lumbar dinamico.</p>
+                        <p>Precio: <strong>$1.140.987</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#respawn110">Silla Respawn 110</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrespawn110&usqp=CAc" alt="Silla Respawn 110" width="200" height="200">
+                        <p>Silla ergonomica con reposabrazos, economica y comoda.</p>
+                        <p>Precio: <strong>$615.652</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#noblechairs">Silla Noblechairs Hero</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcnoblechairs&usqp=CAc" alt="Silla Noblechairs Hero" width="200" height="200">
+                        <p>Silla premium cuero, reposacabezas, lumbares, dise�o.</p>
+                        <p>Precio: <strong>$1.064.430</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#gtplayer">Silla GTPlayer Omega</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcgtplayer&usqp=CAc" alt="Silla GTPlayer Omega" width="200" height="200">
+                        <p>Silla de cuero con reposacabezas, lumbares, estilo racing.</p>
+                        <p>Precio: <strong>$2.384.548</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#andasseat3">Silla AndaSeat Kaiser 3</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcandasseat3&usqp=CAc" alt="Silla AndaSeat Kaiser 3" width="200" height="200">
+                        <p>Silla ergonomica cuero, reposabrazos 4D, lumbar.</p>
+                        <p>Precio: <strong>$2.290.634</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#ewinchampion">Silla E-WIN Champion Series</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcewinchampion&usqp=CAc" alt="Silla E-WIN Champion Series" width="200" height="200">
+                        <p>Silla mesh transpirable, lumbar, reposacabezas, economica.</p>
+                        <p>Precio: <strong>$1.132.018</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#furmax">Silla Furmax Gaming Chair</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcfurmax&usqp=CAc" alt="Silla Furmax Gaming Chair" width="200" height="200">
+                        <p>Silla gaming cuero, reposacabezas, lumbar, economica.</p>
+                        <p>Precio: <strong>$2.481.931</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="sillas-gamers">
+                    <article>
+                        <h2><a href="producto.html#noblechairs">Silla Noblechairs Epic</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcnoblechairs&usqp=CAc" alt="Silla Noblechairs Epic" width="200" height="200">
+                        <p>Silla premium tela, reposacabezas, lumbares, dise�o.</p>
+                        <p>Precio: <strong>$1.826.981</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#razerbw4">Teclado Razer BlackWidow V4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrazerbw4&usqp=CAc" alt="Teclado Razer BlackWidow V4" width="200" height="200">
+                        <p>Teclado mecanico switches green, RGB, USB-C, PBT.</p>
+                        <p>Precio: <strong>$2.477.514</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#ssapexpro">Teclado SteelSeries Apex Pro</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcssapexpro&usqp=CAc" alt="Teclado SteelSeries Apex Pro" width="200" height="200">
+                        <p>Teclado mecanico OmniPoint, OLED, ajuste de actuacion.</p>
+                        <p>Precio: <strong>$1.705.207</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#logitech915">Teclado Logitech G915 TKL</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gclogitech915&usqp=CAc" alt="Teclado Logitech G915 TKL" width="200" height="200">
+                        <p>Teclado inalambrico TKL, switches GL, baja latencia.</p>
+                        <p>Precio: <strong>$1.548.323</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#razerda3">Mouse Razer DeathAdder V3</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrazerda3&usqp=CAc" alt="Mouse Razer DeathAdder V3" width="200" height="200">
+                        <p>Mouse ligero 58g, sensor Focus Pro 30K, 30K DPI.</p>
+                        <p>Precio: <strong>$949.897</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#ssrival600">Mouse SteelSeries Rival 600</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcssrival600&usqp=CAc" alt="Mouse SteelSeries Rival 600" width="200" height="200">
+                        <p>Mouse dual sensor, peso ajustable, dise�o ergon�mico.</p>
+                        <p>Precio: <strong>$610.205</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#razervv2">Mouse Razer Viper V2</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrazervv2&usqp=CAc" alt="Mouse Razer Viper V2" width="200" height="200">
+                        <p>Mouse ultraligero 58g, sensor Focus Pro 30K, 30K DPI.</p>
+                        <p>Precio: <strong>$2.167.108</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#logitechsuperlight2">Mouse Logitech G Pro X Superlight 2</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gclogitechsuperlight2&usqp=CAc" alt="Mouse Logitech G Pro X Superlight 2" width="200" height="200">
+                        <p>Mouse inalambrico ligero, HERO 2, 32K DPI.</p>
+                        <p>Precio: <strong>$2.099.955</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#corsairk70">Teclado Corsair K70 RGB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsairk70&usqp=CAc" alt="Teclado Corsair K70 RGB" width="200" height="200">
+                        <p>Teclado mecanico switches Cherry MX, RGB, aluminio.</p>
+                        <p>Precio: <strong>$411.301</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#razerbw4v2">Teclado Razer BlackWidow V4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrazerbw4v2&usqp=CAc" alt="Teclado Razer BlackWidow V4" width="200" height="200">
+                        <p>Teclado mecanico switches green, RGB, USB-C, PBT.</p>
+                        <p>Precio: <strong>$227.620</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="perifericos">
+                    <article>
+                        <h2><a href="producto.html#ssnova7">Mouse SteelSeries Arctis Nova 7</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcssnova7&usqp=CAc" alt="Mouse SteelSeries Arctis Nova 7" width="200" height="200">
+                        <p>Mouse gaming, sensor 18K DPI, inalambrico.</p>
+                        <p>Precio: <strong>$489.901</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#ssnova7pro">Auriculares SteelSeries Arctis Nova 7 Pro</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcssnova7pro&usqp=CAc" alt="Auriculares SteelSeries Arctis Nova 7 Pro" width="200" height="200">
+                        <p>Auriculares gaming inalambricos, 40mm, Hi-Res, ANC.</p>
+                        <p>Precio: <strong>$671.062</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#razershark">Auriculares Razer BlackShark V2</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrazershark&usqp=CAc" alt="Auriculares Razer BlackShark V2" width="200" height="200">
+                        <p>Auriculares gaming 7.1 virtual, 50mm, microfono retractil.</p>
+                        <p>Precio: <strong>$701.013</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#logitechgpx">Auriculares Logitech G Pro X</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gclogitechgpx&usqp=CAc" alt="Auriculares Logitech G Pro X" width="200" height="200">
+                        <p>Auriculares gaming 7.1, drivers 50mm, DTS Headphone:X.</p>
+                        <p>Precio: <strong>$1.800.667</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#cloud3">Auriculares HyperX Cloud III</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccloud3&usqp=CAc" alt="Auriculares HyperX Cloud III" width="200" height="200">
+                        <p>Auriculares gaming 53mm, cancelacion ruido, RGB.</p>
+                        <p>Precio: <strong>$296.454</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#ssnova3">Auriculares SteelSeries Arctis Nova 3</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcssnova3&usqp=CAc" alt="Auriculares SteelSeries Arctis Nova 3" width="200" height="200">
+                        <p>Auriculares gaming, 40mm, ClearCast, compatibilidad PS5.</p>
+                        <p>Precio: <strong>$1.643.831</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#razerkraken4">Auriculares Razer Kraken V4</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcrazerkraken4&usqp=CAc" alt="Auriculares Razer Kraken V4" width="200" height="200">
+                        <p>Auriculares gaming 7.1, 50mm, HyperClear, RGB.</p>
+                        <p>Precio: <strong>$1.630.627</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#corsairhs80">Auriculares Corsair HS80 RGB</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccorsairhs80&usqp=CAc" alt="Auriculares Corsair HS80 RGB" width="200" height="200">
+                        <p>Auriculares gaming 50mm, 7.1 virtual, microfono flexible.</p>
+                        <p>Precio: <strong>$1.993.143</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#jbl800">Auriculares JBL Quantum 800</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcjbl800&usqp=CAc" alt="Auriculares JBL Quantum 800" width="200" height="200">
+                        <p>Auriculares gaming inalambricos, 7.1, 50mm, JBL.</p>
+                        <p>Precio: <strong>$2.249.266</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#astro50x">Auriculares Astro A50 X</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcastro50x&usqp=CAc" alt="Auriculares Astro A50 X" width="200" height="200">
+                        <p>Auriculares gaming inalambricos, 40mm, base de carga.</p>
+                        <p>Precio: <strong>$1.084.507</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="audio-gamer">
+                    <article>
+                        <h2><a href="producto.html#creativeh6">Auriculares Creative Sound BlasterX H6</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gccreativeh6&usqp=CAc" alt="Auriculares Creative Sound BlasterX H6" width="200" height="200">
+                        <p>Auriculares gaming, DAC integrado, 50mm, surround.</p>
+                        <p>Precio: <strong>$2.350.397</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer3060">PC Gamer Ryzen 5 + RTX 3060</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer3060&usqp=CAc" alt="PC Gamer Ryzen 5 + RTX 3060" width="200" height="200">
+                        <p>Ryzen 5, 16GB DDR4, SSD 500GB, RTX 3060, 1TB HDD.</p>
+                        <p>Precio: <strong>$78.154</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#asusf15">Laptop ASUS TUF Gaming F15</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcasusf15&usqp=CAc" alt="Laptop ASUS TUF Gaming F15" width="200" height="200">
+                        <p>Ryzen 7 5800H, RTX 3060, 16GB DDR4, SSD 512GB.</p>
+                        <p>Precio: <strong>$510.464</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer4070">PC Gamer Ryzen 7 + RTX 4070</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer4070&usqp=CAc" alt="PC Gamer Ryzen 7 + RTX 4070" width="200" height="200">
+                        <p>Ryzen 7, 16GB DDR5, SSD 1TB, RTX 4070, 2TB HDD.</p>
+                        <p>Precio: <strong>$2.282.216</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer4060ti">PC Gamer Intel i7 + RTX 4060 Ti</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer4060ti&usqp=CAc" alt="PC Gamer Intel i7 + RTX 4060 Ti" width="200" height="200">
+                        <p>Intel i7, 32GB DDR5, SSD 1TB, RTX 4060 Ti, 2TB HDD.</p>
+                        <p>Precio: <strong>$1.149.145</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#hppavilion">Laptop HP Pavilion Gaming</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gchppavilion&usqp=CAc" alt="Laptop HP Pavilion Gaming" width="200" height="200">
+                        <p>Ryzen 7 6800H, RTX 3060, 16GB DDR4, SSD 512GB.</p>
+                        <p>Precio: <strong>$1.456.799</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer4080">PC Gamer Ryzen 9 + RTX 4080</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer4080&usqp=CAc" alt="PC Gamer Ryzen 9 + RTX 4080" width="200" height="200">
+                        <p>Ryzen 9, 32GB DDR5, SSD 2TB, RTX 4080, 2TB NVMe.</p>
+                        <p>Precio: <strong>$497.883</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer3060i5">PC Gamer Intel i5 + RTX 3060</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer3060i5&usqp=CAc" alt="PC Gamer Intel i5 + RTX 3060" width="200" height="200">
+                        <p>Intel i5, 16GB DDR4, SSD 500GB, RTX 3060, 1TB HDD.</p>
+                        <p>Precio: <strong>$1.261.028</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#lenovolegion5">Laptop Lenovo Legion 5</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gclenovolegion5&usqp=CAc" alt="Laptop Lenovo Legion 5" width="200" height="200">
+                        <p>Ryzen 7 6800H, RTX 3060, 16GB DDR4, SSD 512GB.</p>
+                        <p>Precio: <strong>$1.853.537</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer4060">PC Gamer Ryzen 5 + RTX 4060</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer4060&usqp=CAc" alt="PC Gamer Ryzen 5 + RTX 4060" width="200" height="200">
+                        <p>Ryzen 5, 16GB DDR4, SSD 500GB, RTX 4060, 1TB HDD.</p>
+                        <p>Precio: <strong>$693.361</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+                <li data-categoria="pcs-armadas">
+                    <article>
+                        <h2><a href="producto.html#pcgamer4070ti">PC Gamer Intel i7 + RTX 4070 Ti</a></h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gcpcgamer4070ti&usqp=CAc" alt="PC Gamer Intel i7 + RTX 4070 Ti" width="200" height="200">
+                        <p>Intel i7, 32GB DDR5, SSD 1TB, RTX 4070 Ti, 2TB HDD.</p>
+                        <p>Precio: <strong>$1.933.055</strong></p>
+                        <a href="#">Agregar al carrito</a>
+                    </article>
+                </li>
+
             </ul>
         </section>
 
         <aside id="filtros" aria-labelledby="filtros-titulo">
             <h2 id="filtros-titulo">Categorías</h2>
 
-            <form action="#" method="get">
-                <fieldset>
-                    <label>
-                        <input type="checkbox" name="categoria" value="placas-de-video">
-                        Placas de video
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="procesadores">
-                        Procesadores
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="mothers">
-                        Mothers
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="memorias-ram">
-                        Memorias RAM
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="almacenamiento">
-                        Almacenamiento
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="gabinetes">
-                        Gabinetes
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="monitores">
-                        Monitores
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="refrigeracion">
-                        Refrigeración
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="fuentes">
-                        Fuentes
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="sillas-gamers">
-                        Sillas gamers
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="perifericos">
-                        Periféricos (teclados, mouses, pads)
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="audio-gamer">
-                        Audio gamer
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="consolas">
-                        Consolas
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="simracing">
-                        Simracing y joysticks
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="streaming">
-                        Streaming
-                    </label>
-                    <label>
-                        <input type="checkbox" name="categoria" value="pcs-armadas">
-                        PCs armadas
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Precio</legend>
-                    <label for="precio-min">Precio mínimo</label>
-                    <input type="number" id="precio-min" name="precio_min" min="0" step="1">
-
-                    <label for="precio-max">Precio máximo</label>
-                    <input type="number" id="precio-max" name="precio_max" min="0" step="1">
-                </fieldset>
-
-                <label for="orden">Ordenar por</label>
-                <select id="orden" name="orden">
-                    <option value="relevancia">Relevancia</option>
-                    <option value="precio_asc">Precio: menor a mayor</option>
-                    <option value="precio_desc">Precio: mayor a menor</option>
-                </select>
-
-                <button type="submit">Aplicar filtros</button>
-            </form>
+            <div class="filtro-categorias">
+                <label for="cat-todos">Todos</label>
+                <label for="cat-placas-de-video">Placas de video</label>
+                <label for="cat-procesadores">Procesadores</label>
+                <label for="cat-mothers">Mothers</label>
+                <label for="cat-memorias-ram">Memorias RAM</label>
+                <label for="cat-almacenamiento">Almacenamiento</label>
+                <label for="cat-gabinetes">Gabinetes</label>
+                <label for="cat-monitores">Monitores</label>
+                <label for="cat-refrigeracion">Refrigeración</label>
+                <label for="cat-fuentes">Fuentes</label>
+                <label for="cat-sillas-gamers">Sillas gamers</label>
+                <label for="cat-perifericos">Periféricos (teclados, mouses, pads)</label>
+                <label for="cat-audio-gamer">Audio gamer</label>
+                <label for="cat-pcs-armadas">PCs armadas</label>
+            </div>
         </aside>
     </main>
 
