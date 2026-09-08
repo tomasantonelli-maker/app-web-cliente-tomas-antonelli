@@ -126,11 +126,57 @@ address { font-style: normal; }
     padding: 1.5rem;
 }
 
-#filtros fieldset { border: none; margin-bottom: 1rem; }
-#filtros legend { font-weight: 700; color: var(--rojo-oscuro); margin-bottom: 0.5rem; }
-#filtros label { display: block; font-size: 0.95rem; margin-bottom: 0.3rem; }
-#filtros input[type="number"] { width: 100%; margin: 0.2rem 0 0.8rem; }
-#filtros select { width: 100%; margin-bottom: 1rem; }
+/* ==== Radio buttons ocultos para filtrado ==== */
+.cat-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+#filtros label[for] {
+    cursor: pointer;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+#filtros label[for]:hover {
+    color: var(--rojo);
+}
+
+/* ==== Filtrado por categoría (CSS only) ==== */
+#destacados ul > li { display: flex; }
+
+#cat-todos:checked ~ #destacados ul > li { display: flex; }
+
+#cat-placas-de-video:checked ~ #destacados ul > li:not([data-categoria="placas-de-video"]),
+#cat-procesadores:checked ~ #destacados ul > li:not([data-categoria="procesadores"]),
+#cat-mothers:checked ~ #destacados ul > li:not([data-categoria="mothers"]),
+#cat-memorias-ram:checked ~ #destacados ul > li:not([data-categoria="memorias-ram"]),
+#cat-almacenamiento:checked ~ #destacados ul > li:not([data-categoria="almacenamiento"]),
+#cat-gabinetes:checked ~ #destacados ul > li:not([data-categoria="gabinetes"]),
+#cat-monitores:checked ~ #destacados ul > li:not([data-categoria="monitores"]),
+#cat-refrigeracion:checked ~ #destacados ul > li:not([data-categoria="refrigeracion"]),
+#cat-fuentes:checked ~ #destacados ul > li:not([data-categoria="fuentes"]),
+#cat-sillas-gamers:checked ~ #destacados ul > li:not([data-categoria="sillas-gamers"]),
+#cat-perifericos:checked ~ #destacados ul > li:not([data-categoria="perifericos"]),
+#cat-audio-gamer:checked ~ #destacados ul > li:not([data-categoria="audio-gamer"]),
+#cat-pcs-armadas:checked ~ #destacados ul > li:not([data-categoria="pcs-armadas"]) {
+    display: none;
+}
+
+.filtro-categorias { display: flex; flex-direction: column; gap: 0.3rem; }
+.filtro-categorias label {
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
+}
+.filtro-categorias label:hover {
+    background: var(--rojo-claro);
+    color: var(--rojo-oscuro);
+}
 
 /* ==== Botones ==== */
 button,
