@@ -25,3 +25,5 @@ Predicciones
 12-quiero que al hacer clic en una categoría específica, la interfaz se actualice para mostrar únicamente los productos que pertenecen a esa categoría.
 
 13-voy a agregar mas productos con sus respectivas imagenes.
+
+14-voy a terminar de agregar las imagenes de esos productos y modificar algunos productos.
