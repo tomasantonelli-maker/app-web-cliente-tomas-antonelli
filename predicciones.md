@@ -27,3 +27,5 @@ Predicciones
 13-voy a agregar mas productos con sus respectivas imagenes.
 
 14-voy a terminar de agregar las imagenes de esos productos y modificar algunos productos.
+
+15.voy a terminar de agregar las imagenes de los productos en el apartado de detalle del producto.
