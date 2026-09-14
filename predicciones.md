@@ -28,4 +28,6 @@ Predicciones
 
 14-voy a terminar de agregar las imagenes de esos productos y modificar algunos productos.
 
-15.voy a terminar de agregar las imagenes de los productos en el apartado de detalle del producto.
+15-voy a terminar de agregar las imagenes de los productos en el apartado de detalle del producto.
+
+16-actualizo informacion de la marca en el index.html, carrito.html y contacto.html
