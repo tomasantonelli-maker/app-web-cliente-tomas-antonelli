@@ -31,3 +31,5 @@ Predicciones
 15-voy a terminar de agregar las imagenes de los productos en el apartado de detalle del producto.
 
 16-actualizo informacion de la marca en el index.html, carrito.html y contacto.html
+
+17-termino de actualizar informacion de la marca en el carrito.html y contacto.html
