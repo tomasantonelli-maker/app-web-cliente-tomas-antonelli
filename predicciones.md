@@ -36,4 +36,7 @@ Predicciones
 
 18-voy a hacer que al abrir el detalle de cada producto se vea solo ese producto y no todos los demas al subir o bajar.
 
-voy a agregar el icono al title de la pagina.
+19-voy a agregar el icono al title de la pagina.
+
+20-pongo el header sticky para que al scrollear quede fijo.
+ 

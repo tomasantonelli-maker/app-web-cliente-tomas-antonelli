@@ -33,6 +33,9 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header > p a { font-size: 1.5rem; font-weight: 700; color: var(--texto); }
@@ -118,8 +121,6 @@ address { font-style: normal; }
     min-width: 250px;
     order: 1;
     align-self: flex-start;
-    position: sticky;
-    top: 1rem;
     background: var(--rojo-claro);
     border: 1px solid var(--borde);
     border-radius: 10px;
