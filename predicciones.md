@@ -35,3 +35,5 @@ Predicciones
 17-termino de actualizar informacion de la marca en el carrito.html y contacto.html.
 
 18-voy a hacer que al abrir el detalle de cada producto se vea solo ese producto y no todos los demas al subir o bajar.
+
+voy a agregar el icono al title de la pagina.
