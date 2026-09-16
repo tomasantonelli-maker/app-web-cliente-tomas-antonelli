@@ -30,7 +30,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html#destacados">Productos</a></li>
-                <li aria-current="page">Notebook Lenovo IdeaPad 3</li>
+                <li aria-current="page" id="breadcrumb-producto"></li>
             </ul>
         </nav>
 
@@ -5102,5 +5102,17 @@
 
         <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        const hash = location.hash.slice(1);
+        const articulo = hash && document.getElementById(hash);
+        const breadcrumb = document.getElementById('breadcrumb-producto');
+        if (articulo && articulo.tagName === 'ARTICLE') {
+            const h1 = articulo.querySelector('h1');
+            breadcrumb.textContent = h1 ? h1.textContent : hash;
+        } else {
+            breadcrumb.textContent = 'Productos';
+        }
+    </script>
 </body>
 </html>
