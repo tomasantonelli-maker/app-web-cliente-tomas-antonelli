@@ -27,7 +27,7 @@ a:hover { text-decoration: underline; }
 header {
     background: var(--blanco);
     border-bottom: 3px solid var(--rojo);
-    padding: 1rem 2rem;
+    padding: 0.01rem 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -73,8 +73,8 @@ address { font-style: normal; }
 #destacados ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
     align-items: stretch;
 }
 
@@ -84,12 +84,12 @@ address { font-style: normal; }
 
 #destacados article {
     background: var(--blanco);
-    border: 1px solid var(--borde);
-    border-radius: 10px;
-    padding: 1.2rem;
+    border: 1.7px solid #dcdcdc;;
+    border-radius: 20px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
     transition: box-shadow 0.2s;
     flex: 1;
     height: 100%;
@@ -97,11 +97,11 @@ address { font-style: normal; }
 
 #destacados article:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); }
 #destacados article img { align-self: center; object-fit: contain; width: 200px; height: 200px; }
-#destacados article h2 { font-size: 1.1rem; margin: 0; min-height: 2.6em; line-height: 1.3; }
-#destacados article p { font-size: 0.95rem; color: var(--gris); }
+#destacados article h2 { font-size: 0.95rem; margin: 0; min-height: 2.4em; line-height: 1.3; }
+#destacados article p { font-size: 0.85rem; color: var(--gris); }
+#destacados article p:first-of-type { flex: 1; }
 
 #destacados article a[href="#"] {
-    margin-top: auto;
     text-align: center;
     background: var(--rojo);
     color: var(--blanco);
