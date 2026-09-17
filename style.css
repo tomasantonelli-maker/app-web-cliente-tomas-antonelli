@@ -5,7 +5,7 @@
     --rojo: #dc2626;
     --rojo-oscuro: #b91c1c;
     --rojo-claro: #fef2f2;
-    --blanco: #fff;
+    --blanco: #EEEEEE;
     --texto: #1f2937;
     --gris: #6b7280;
     --borde: #ececec;
@@ -25,8 +25,8 @@ a:hover { text-decoration: underline; }
 
 /* ==== Header y nav ==== */
 header {
-    background: var(--blanco);
-    border-bottom: 3px solid var(--rojo);
+    background:#212121;
+    border-bottom: 3px solid;
     padding: 0.01rem 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +48,7 @@ nav ul {
     gap: 1.5rem;
 }
 
-nav ul a { color: var(--texto); font-weight: 500; }
+nav ul a { color: rgba(255, 255, 255, 0.904); font-weight: 500; }
 nav ul a:hover { color: var(--rojo); text-decoration: none; }
 
 /* ==== Main y títulos ==== */
@@ -83,7 +83,7 @@ address { font-style: normal; }
 }
 
 #destacados article {
-    background: var(--blanco);
+    background: white;
     border: 1.7px solid #dcdcdc;;
     border-radius: 20px;
     padding: 1rem;
@@ -121,7 +121,7 @@ address { font-style: normal; }
     min-width: 250px;
     order: 1;
     align-self: flex-start;
-    background: var(--rojo-claro);
+    background: #EEEEEE;
     border: 1px solid var(--borde);
     border-radius: 10px;
     padding: 1.5rem;
@@ -175,7 +175,7 @@ address { font-style: normal; }
     transition: background 0.15s, color 0.15s;
 }
 .filtro-categorias label:hover {
-    background: var(--rojo-claro);
+    background: #EEEEEE;
     color: var(--rojo-oscuro);
 }
 
@@ -320,7 +320,7 @@ main > section,
 
 /* ==== Footer ==== */
 footer {
-    background: var(--rojo-oscuro);
+    background: #212121;
     color: var(--blanco);
     padding: 2rem 2rem 1rem;
     margin-top: 2rem;
