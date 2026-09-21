@@ -43,3 +43,5 @@ Predicciones
 21-voy a ajustar  el padding del header y de los productos.
 
 22-Cambio el background-color del body, de la etiqueta article, del header y del footer.
+
+23-voy a cambiar el background-color del detalle de cada producto.
