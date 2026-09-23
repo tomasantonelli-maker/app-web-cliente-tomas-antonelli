@@ -352,3 +352,11 @@ footer > p {
     #filtros { position: static; }
     footer { flex-direction: column; }
 }
+
+article[id] {
+    background-color: white;
+    border-radius: 24px;
+    padding: 64px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
