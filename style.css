@@ -28,15 +28,17 @@ header {
     background:#212121;
     border-bottom: 3px solid;
     padding: 0.01rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
 }
+
+header > p { justify-self: start; }
+header nav { justify-self: end; }
 
 header > p a { font-size: 1.5rem; font-weight: 700; color: var(--texto); }
 header > p a:hover { color: var(--rojo); }
@@ -50,6 +52,60 @@ nav ul {
 
 nav ul a { color: rgba(255, 255, 255, 0.904); font-weight: 500; }
 nav ul a:hover { color: var(--rojo); text-decoration: none; }
+
+/* ==== Buscador en el header ==== */
+.buscador {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    min-width: 700px;
+}
+
+.buscador input[type="search"] {
+    width: min(100%, 700px);
+    padding: 0.55rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background: var(--blanco);
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 0.95rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.buscador input[type="search"]::placeholder {
+    color: var(--gris);
+    opacity: 1;
+}
+
+.buscador input[type="search"]:focus {
+    outline: none;
+    border-color: var(--rojo);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==== Resultado del buscador ==== */
+#sin-resultados {
+    text-align: center;
+    color: var(--gris);
+    font-size: 1.1rem;
+    padding: 2rem 1rem;
+    background: white;
+    border: 1.7px dashed #dcdcdc;
+    border-radius: 20px;
+}
 
 /* ==== Main y títulos ==== */
 main {
@@ -346,7 +402,10 @@ footer > p {
 
 /* ==== Responsive ==== */
 @media (max-width: 768px) {
-    header { flex-direction: column; align-items: flex-start; padding: 1rem; }
+    header { grid-template-columns: 1fr; padding: 1rem; }
+    header > p, header nav { justify-self: start; }
+    .buscador { width: 100%; min-width: 0; justify-self: stretch; }
+    .buscador input[type="search"] { width: 100%; }
     nav ul { flex-direction: column; gap: 0.6rem; }
     main { padding: 0 1rem; margin: 1rem auto; }
     #filtros { position: static; }

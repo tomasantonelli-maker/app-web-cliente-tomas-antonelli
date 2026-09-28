@@ -14,6 +14,10 @@
                 <img src="logo.png" alt="Logo Ultra Hardware" width="150">
             </a>
         </p>
+        <form class="buscador" role="search" action="index.html" method="get">
+            <label for="buscador-productos" class="visually-hidden">Buscar productos</label>
+            <input type="search" id="buscador-productos" name="q" placeholder="Buscar productos..." autocomplete="off">
+        </form>
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -164,7 +168,7 @@
                 </li>
                 <li data-categoria="procesadores">
                     <article>
-                        <h2><a href="producto.html#ryzen7">Procesador Ryzen 7 7800X3D</a></h2>
+                        <h2><a href="producto.html#ryzen7">Procesador AMD Ryzen 7 7800X3D</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36870_Procesador_AMD_Ryzen_7_7800X3D_5.0GHz_Turbo_AM5_-_No_incluye_cooler_ce1f39a0-grn.jpg" alt="Procesador AMD Ryzen 7 7800X3D">
                         <p>8 núcleos / 16 hilos, 3D V-Cache, el rey del gaming en AM5.</p>
                         <p>Precio: <strong>$720.000</strong></p>
@@ -1416,6 +1420,8 @@
                 </li>
 
             </ul>
+
+            <p id="sin-resultados" hidden>No se encontraron productos</p>
         </section>
 
         <aside id="filtros" aria-labelledby="filtros-titulo">
@@ -1458,5 +1464,77 @@
 
         <p>&copy; 2026 Ultra Hardware. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        (function () {
+            const campo = document.getElementById('buscador-productos');
+            const productos = Array.prototype.slice.call(document.querySelectorAll('#destacados ul > li'));
+            const sinResultados = document.getElementById('sin-resultados');
+            const radios = document.querySelectorAll('.cat-input');
+
+            function categoriaActiva() {
+                const marcado = document.querySelector('.cat-input:checked');
+                return marcado ? marcado.value : 'todos';
+            }
+
+            function variantes(palabra) {
+                const lista = [palabra];
+                if (palabra.endsWith('s')) {
+                    lista.push(palabra.slice(0, -1));
+                }
+                if (palabra.endsWith('es')) {
+                    lista.push(palabra.slice(0, -2));
+                }
+                return lista.filter(function (v) { return v.length > 0; });
+            }
+
+            function coincideCon(nombre, texto) {
+                const palabras = texto.split(/\s+/).filter(function (p) { return p.length > 0; });
+                return palabras.every(function (palabra) {
+                    return variantes(palabra).some(function (v) {
+                        return nombre.indexOf(v) !== -1;
+                    });
+                });
+            }
+
+            function filtrar() {
+                const texto = campo.value.trim().toLowerCase();
+                const categoria = categoriaActiva();
+                const buscando = texto.length > 0;
+                let visibles = 0;
+
+                productos.forEach(function (li) {
+                    const titulo = li.querySelector('h2');
+                    const nombre = titulo ? titulo.textContent.toLowerCase() : '';
+                    const coincide = coincideCon(nombre, texto);
+                    const enCategoria = categoria === 'todos' || li.dataset.categoria === categoria;
+
+                    if (buscando) {
+                        li.style.display = coincide ? 'flex' : 'none';
+                    } else {
+                        li.style.display = '';
+                    }
+
+                    if (coincide && (buscando || enCategoria)) {
+                        visibles++;
+                    }
+                });
+
+                sinResultados.hidden = visibles > 0;
+            }
+
+            campo.addEventListener('input', filtrar);
+            Array.prototype.forEach.call(radios, function (radio) {
+                radio.addEventListener('change', filtrar);
+            });
+
+            const parametro = new URLSearchParams(window.location.search).get('q');
+            if (parametro) {
+                campo.value = parametro;
+            }
+
+            filtrar();
+        })();
+    </script>
 </body>
 </html>
