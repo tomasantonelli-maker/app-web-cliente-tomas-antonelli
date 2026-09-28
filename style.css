@@ -509,6 +509,24 @@ main > section,
 #datos ul { list-style: none; }
 #datos ul li { padding: 0.3rem 0; }
 
+/* ==== Contacto: rectángulos blancos para contraste ==== */
+.pagina-contacto main > section {
+    background: #ffffff;
+    border: 1.7px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pagina-contacto fieldset { border-color: #dcdcdc; }
+
+.pagina-contacto input[type="text"],
+.pagina-contacto input[type="email"],
+.pagina-contacto input[type="tel"],
+.pagina-contacto select,
+.pagina-contacto textarea { border-color: #c9c9c9; }
+
+.pagina-contacto #formulario-titulo { margin-top: 1.75rem; }
+
 /* ==== Footer ==== */
 footer {
     background: #212121;
