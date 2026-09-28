@@ -53,3 +53,5 @@ Predicciones
 26-agrego el icono de lupa a la barra de busqueda.
 
 27-quiero agregar subcategorias dentro de las categorias que ya estan, eliminar la categoria audio gamer y agregarlo como auriculares y microfonos nombre dentro de la categoria perifericos.
+
+28- quiero que las secciones de carrito.html queden con tarjetas blancas con borde y sombra suave para que el contraste con el fondo gris se vea bien.
