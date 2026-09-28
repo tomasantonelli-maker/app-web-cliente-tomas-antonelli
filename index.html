@@ -34,19 +34,31 @@
 
     <main>
         <input type="radio" id="cat-todos" name="cat" value="todos" checked class="cat-input">
-        <input type="radio" id="cat-placas-de-video" name="cat" value="placas-de-video" class="cat-input">
-        <input type="radio" id="cat-procesadores" name="cat" value="procesadores" class="cat-input">
-        <input type="radio" id="cat-mothers" name="cat" value="mothers" class="cat-input">
+        <input type="radio" id="cat-placas-de-video" name="cat" value="placas-de-video" class="cat-input cat-padre">
+        <input type="radio" id="cat-procesadores" name="cat" value="procesadores" class="cat-input cat-padre">
+        <input type="radio" id="cat-mothers" name="cat" value="mothers" class="cat-input cat-padre">
         <input type="radio" id="cat-memorias-ram" name="cat" value="memorias-ram" class="cat-input">
-        <input type="radio" id="cat-almacenamiento" name="cat" value="almacenamiento" class="cat-input">
+        <input type="radio" id="cat-almacenamiento" name="cat" value="almacenamiento" class="cat-input cat-padre">
         <input type="radio" id="cat-gabinetes" name="cat" value="gabinetes" class="cat-input">
         <input type="radio" id="cat-monitores" name="cat" value="monitores" class="cat-input">
         <input type="radio" id="cat-refrigeracion" name="cat" value="refrigeracion" class="cat-input">
         <input type="radio" id="cat-fuentes" name="cat" value="fuentes" class="cat-input">
         <input type="radio" id="cat-sillas-gamers" name="cat" value="sillas-gamers" class="cat-input">
-        <input type="radio" id="cat-perifericos" name="cat" value="perifericos" class="cat-input">
-        <input type="radio" id="cat-audio-gamer" name="cat" value="audio-gamer" class="cat-input">
+        <input type="radio" id="cat-perifericos" name="cat" value="perifericos" class="cat-input cat-padre">
         <input type="radio" id="cat-pcs-armadas" name="cat" value="pcs-armadas" class="cat-input">
+        <input type="radio" id="cat-placas-amd-radeon" name="cat" value="placas-amd-radeon" class="cat-input">
+        <input type="radio" id="cat-placas-nvidia-geforce" name="cat" value="placas-nvidia-geforce" class="cat-input">
+        <input type="radio" id="cat-procesadores-amd" name="cat" value="procesadores-amd" class="cat-input">
+        <input type="radio" id="cat-procesadores-intel" name="cat" value="procesadores-intel" class="cat-input">
+        <input type="radio" id="cat-mothers-amd" name="cat" value="mothers-amd" class="cat-input">
+        <input type="radio" id="cat-mothers-intel" name="cat" value="mothers-intel" class="cat-input">
+        <input type="radio" id="cat-discos-rigidos" name="cat" value="discos-rigidos" class="cat-input">
+        <input type="radio" id="cat-discos-solidos" name="cat" value="discos-solidos" class="cat-input">
+        <input type="radio" id="cat-teclados" name="cat" value="teclados" class="cat-input">
+        <input type="radio" id="cat-mouses" name="cat" value="mouses" class="cat-input">
+        <input type="radio" id="cat-pads" name="cat" value="pads" class="cat-input">
+        <input type="radio" id="cat-microfonos" name="cat" value="microfonos" class="cat-input">
+        <input type="radio" id="cat-auriculares" name="cat" value="auriculares" class="cat-input">
 
         <section id="destacados" aria-labelledby="destacados-titulo">
             <h1 id="destacados-titulo">Productos destacados</h1>
@@ -70,7 +82,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="teclados">
                     <article>
                         <h2><a href="producto.html#teclado">Teclado Mecánico Redragon</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_8903_Teclado_Mecanico_Redragon_Kumara_K552_RGB_Outemu_Red_ESP_2e7c11dd-grn.jpg" alt="Teclado mecánico Redragon">
@@ -79,7 +91,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="mouses">
                     <article>
                         <h2><a href="producto.html#mouse">Mouse Gamer Logitech G203</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36943_Mouse_Logitech_G203_Lightsync_RGB_White_e2e81b78-grn.jpg" alt="Mouse Gamer Logitech G203">
@@ -88,7 +100,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#ssd">Disco SSD Kingston 480GB</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_9238_Disco_S__lido_SSD_Kingston_480GB_A400_500MB_s_fe39619d-grn.jpg" alt="Disco SSD Kingston 480GB">
@@ -106,7 +118,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#procesador">Procesador AMD Ryzen 5 5600X</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQtZhLHBitjMKs8hykImy5_YN1o8MB0RFhhyvrjFnqg&s=10" alt="Procesador AMD Ryzen 5 5600X">
@@ -115,7 +127,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#placa">Placa de Video NVIDIA RTX 3060</a></h2>
                         <img src="https://app.contabilium.com/files/explorer/48428/Productos-Servicios/concepto-17822389.png" alt="Placa de video NVIDIA RTX 3060">
@@ -133,7 +145,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#auriculares">Auriculares HyperX Cloud II</a></h2>
                         <img src="https://http2.mlstatic.com/D_633053-MLA89581911482_082025-C.jpg" alt="Auriculares HyperX Cloud II">
@@ -160,7 +172,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx4070">Placa de Video RTX 4070 12GB</a></h2>
                         <img src="https://m.media-amazon.com/images/I/71liIYrRmkL._SY800_.jpg" alt="Placa de video NVIDIA RTX 4070 12GB">
@@ -169,7 +181,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen7">Procesador AMD Ryzen 7 7800X3D</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36870_Procesador_AMD_Ryzen_7_7800X3D_5.0GHz_Turbo_AM5_-_No_incluye_cooler_ce1f39a0-grn.jpg" alt="Procesador AMD Ryzen 7 7800X3D">
@@ -178,7 +190,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#mother">Motherboard MSI B550 Gaming Plus</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_926704-MLA99865311281_112025-F.webp" alt="Motherboard MSI B550 Gaming Plus">
@@ -196,7 +208,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#ssd-nvme">SSD NVMe Samsung 980 Pro 1TB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTKJjUYvDOGGss7zqIsFlBgzDZjHL979tx05AyjaNNn0CefSVO-BEQqwV5SVFVth0Comqjq5Om7YNa6nPLknVGvSjX9mOYYGnAwxMayUI0dZUyksvABlBu" alt="SSD NVMe Samsung 980 Pro 1TB">
@@ -223,7 +235,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="microfonos">
                     <article>
                         <h2><a href="producto.html#microfono">Micrófono HyperX QuadCast S</a></h2>
                         <img src="https://acdn-us.mitiendanube.com/stores/004/527/491/products/21588-73a841853adbdca37e17647823277745-1024-1024.webp" alt="Micrófono HyperX QuadCast S RGB">
@@ -232,7 +244,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="pads">
                     <article>
                         <h2><a href="producto.html#mousepad">Mousepad Gamer RGB XL</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33079_Mouse_Pad_Corsair_MM700_RGB_Extended_XL_930x400x4mm_517ba300-grn.jpg" alt="Mousepad gamer Redragon RGB XL">
@@ -250,7 +262,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="teclados">
                     <article>
                         <h2><a href="producto.html#teclado-hyperx">Teclado Gamer HyperX Alloy Origins</a></h2>
                         <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR_P65q734r0bZ4rp34lqE_GYP7OuApT_C8lUK1Sq8iYv9dmQJW0ZjFmQ56dybvlLgt6fejdVRTYW05U29joRa-_kDPrAaCJDMBced1SmujCxZp8aTYWR-p" alt="Teclado gamer HyperX Alloy Origins Core">
@@ -259,7 +271,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx3060ti">Placa de Video NVIDIA RTX 3060 Ti</a></h2>
                         <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTOFKhlz48SZziVxk_8GOZPzIno28pY1zbZJzT8vWT1-2zOZNsWGWLMtvqmJNYPTy3FBpIZXaEKUs6yFKsf91J2h7NbOOLMA" alt="Placa de Video NVIDIA RTX 3060 Ti">
@@ -268,7 +280,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx4060">Placa de Video NVIDIA RTX 4060</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQF6vXAVjWl1i6NtjHIL5zjX5iRwFYkOE_5YzNEEntw&s=10" alt="Placa de Video NVIDIA RTX 4060">
@@ -277,7 +289,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-amd-radeon">
                     <article>
                         <h2><a href="producto.html#rx7900xtx">Placa de Video AMD RX 7900 XTX</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjbeXWvGMX5K9-5y00H6oUhA3ynjNKeTXUbqDh2z8d0A&s=10" alt="Placa de Video AMD RX 7900 XTX">
@@ -286,7 +298,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx3080">Placa de Video NVIDIA RTX 3080</a></h2>
                         <img src="https://statics2.qloud.com.ar/274/03-09-2024-10-09-54_1.png" alt="Placa de Video NVIDIA RTX 3080">
@@ -295,7 +307,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx4080super">Placa de Video NVIDIA RTX 4080 Super</a></h2>
                         <img src="https://gorilagames.com/img/Public/1019/56633-producto-placa-video-asus-rog-strix-geforce-4080-super-16gb-gorila-games-1.jpg " alt="Placa de Video NVIDIA RTX 4080 Super">
@@ -304,7 +316,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-amd-radeon">
                     <article>
                         <h2><a href="producto.html#rx7800xt">Placa de Video AMD RX 7800 XT</a></h2>
                         <img src="https://pg.asrock.com/Graphics-Card/photo/Radeon%20RX%207800%20XT%20Phantom%20Gaming%2016GB%20OC(L1).png" alt="Placa de Video AMD RX 7800 XT">
@@ -313,7 +325,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx3070ti">Placa de Video NVIDIA RTX 3070 Ti</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOYqRlr9Mbu3hQI2Zg6axgWzjfYmCFDSwNHDY7_8w4g&s=10">
@@ -322,7 +334,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx4090">Placa de Video NVIDIA RTX 4090</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX87Z95vSv7-scsUfLh47ic4RuKGv9OzaLu-FdSu9tQ&s=10">
@@ -331,7 +343,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-amd-radeon">
                     <article>
                         <h2><a href="producto.html#rx7600">Placa de Video AMD RX 7600</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--QGoKwfMoDB_PrVKwoA8L8NtLfZEANRv_sfEUjR_HA&s" alt="Placa de Video AMD RX 7600">
@@ -340,7 +352,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="placas-de-video">
+                <li data-categoria="placas-de-video" data-subcategoria="placas-nvidia-geforce">
                     <article>
                         <h2><a href="producto.html#rtx3050">Placa de Video NVIDIA RTX 3050</a></h2>
                         <img src="https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/912-V812-060.jpg" alt="Placa de Video NVIDIA RTX 3050">
@@ -349,7 +361,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen57600x">Procesador AMD Ryzen 5 7600X</a></h2>
                         <img src="https://katech.com.ar/wp-content/uploads/CPU165-jpg-webp.webp" alt="Procesador AMD Ryzen 5 7600X">
@@ -358,7 +370,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen97950x">Procesador AMD Ryzen 9 7950X</a></h2>
                         <img src="https://fullh4rd.com.ar/img/productos/1/micro-amd-ryzen-9-7950x-cvideo-scooler-am5-0.jpg" alt="Procesador AMD Ryzen 9 7950X">
@@ -367,7 +379,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-intel">
                     <article>
                         <h2><a href="producto.html#i713700k">Procesador Intel Core i7-13700K</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_696551-MLA52678939884_122022-O.webp" alt="Procesador Intel Core i7-13700K">
@@ -376,7 +388,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen75800x3d">Procesador AMD Ryzen 7 5800X3D</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbR2PDyBaS0CMfXASZ1qeK1ylL6Zr1V5wQLUv2kxcOEQ&s=10" alt="Procesador AMD Ryzen 7 5800X3D">
@@ -385,7 +397,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-intel">
                     <article>
                         <h2><a href="producto.html#i913900k">Procesador Intel Core i9-13900K</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bQMbZ25HP5iRBLRRr9ZHXKica6oF96C3YiR0mIcfHg&s=10" alt="Procesador Intel Core i9-13900K">
@@ -394,7 +406,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen55600g">Procesador AMD Ryzen 5 5600G</a></h2>
                         <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSn1hyEyPNy-jaQZbk8-o_kVXBH7yXFnC2sLtz1Y9g8Ig8d7hlPmwci_ERJWd0_u9US1lkb6nvtJnqRfFy7kfLDVVD1cBehcL7j7MBg0PzkEvetRgmh06NYbAhQjgB59RZ0PK_qEL8&usqp=CAc" alt="Procesador AMD Ryzen 5 5600G">
@@ -403,7 +415,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-intel">
                     <article>
                         <h2><a href="producto.html#i513600k">Procesador Intel Core i5-13600K</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQNUoXLEILft00SVlTdAm1ROOyH5JpuyVGyZ544t3JQ&s=10" alt="Procesador Intel Core i5-13600K">
@@ -412,7 +424,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen97900x">Procesador AMD Ryzen 9 7900X</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFNYxv9DTdnB4TOqKmc_mQLpAbP4bw6hsAUP_8xDHFw&s=10" alt="Procesador AMD Ryzen 9 7900X">
@@ -421,7 +433,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-intel">
                     <article>
                         <h2><a href="producto.html#i712700k">Procesador Intel Core i7-12700K</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0sGpfVeGDWdGI06FMrRbDggM4lr20YG_HwwWKsn0STQ&s=10" alt="Procesador Intel Core i7-12700K">
@@ -430,7 +442,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="procesadores">
+                <li data-categoria="procesadores" data-subcategoria="procesadores-amd">
                     <article>
                         <h2><a href="producto.html#ryzen33100">Procesador AMD Ryzen 3 3100</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_697104-MLA42919506689_072020-O.webp" alt="Procesador AMD Ryzen 3 3100">
@@ -439,7 +451,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#asusb550f">Motherboard ASUS ROG Strix B550-F</a></h2>
                         <img src="https://m.media-amazon.com/images/I/71j-fSHhvUL._AC_UF894,1000_QL80_.jpg" alt="Motherboard ASUS ROG Strix B550-F">
@@ -448,7 +460,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#msix670e">Motherboard MSI MAG X670E Tomahawk</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_661295-MLA99371743164_112025-F.webp" alt="Motherboard MSI MAG X670E Tomahawk">
@@ -457,7 +469,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-intel">
                     <article>
                         <h2><a href="producto.html#gigaz790">Motherboard Gigabyte Z790 AORUS Master</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_908007-MLA99414552960_112025-F.webp" alt="Motherboard Gigabyte Z790 AORUS Master">
@@ -466,7 +478,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#asrockb650e">Motherboard ASRock B650E Steel Legend</a></h2>
                         <img src="https://www.venex.com.ar/products_images/1786560442_motherboard_asrock_b650_steel_legend_wifi_am5_ddr5_1png" alt="Motherboard ASRock B650E Steel Legend">
@@ -475,7 +487,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-intel">
                     <article>
                         <h2><a href="producto.html#msib760">Motherboard MSI MAG B760 Tomahawk WiFi</a></h2>
                         <img src="https://gorilagames.com/img/Public/1019/4732-producto-motherboard-msi-tomahawk-b760-wifi-lga-1700-intel-gorila-games-1.jpg" alt="Motherboard MSI MAG B760 Tomahawk WiFi">
@@ -484,7 +496,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#asustufx670e">Motherboard ASUS TUF Gaming X670E-Plus</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_2X_824509-MLA115653386735_082026-P.webp" alt="Motherboard ASUS TUF Gaming X670E-Plus">
@@ -493,7 +505,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#gigab650">Motherboard Gigabyte B650 AORUS Elite AX</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_616031-CBT107944843644_032026-F.webp" alt="Motherboard Gigabyte B650 AORUS Elite AX">
@@ -502,7 +514,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-intel">
                     <article>
                         <h2><a href="producto.html#asrockz690">Motherboard ASRock Z690 Taichi</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2rCYLGY9iZ13ZDYNw5YZEHzcGfB-H4R43UCxn0JZ_wA&s=10" alt="Motherboard ASRock Z690 Taichi">
@@ -511,7 +523,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-intel">
                     <article>
                         <h2><a href="producto.html#msiz790g">Motherboard MSI MEG Z790 Godlike</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_831957-CBT78797211029_082024-O.webp" alt="Motherboard MSI MEG Z790 Godlike">
@@ -520,7 +532,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="mothers">
+                <li data-categoria="mothers" data-subcategoria="mothers-amd">
                     <article>
                         <h2><a href="producto.html#asurogx670e">Motherboard ASUS ROG Strix X670E-E</a></h2>
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRooRNv7CxEm8AZ5L8cUMdMwusFfQbO-JcJZoU5Fm5sfNS_eHcWZ1lZ4M7YHQiyCPeVImcMuGdNLv1LiCTiH9-FtGS73rZO59VYlTDjOkdyfbxWNrjVNhaNDGdsNMzJ57Gpw79idKmq8BI&usqp=CAc" alt="Motherboard ASUS ROG Strix X670E-E">
@@ -619,7 +631,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#wd500gb">SSD Western Digital Black 500GB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2ObMvr09wd5VPT0O_TKXE_kMyAnFGJD5vke86wAcRw&s=10" alt="SSD Western Digital Black 500GB">
@@ -628,7 +640,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-rigidos">
                     <article>
                         <h2><a href="producto.html#seagate2tb">HDD Seagate Barracuda 2TB</a></h2>
                         <img src="https://static.nb.com.ar/i/nb_DISCO-HDD-2TB-SEAGATE-BARRACUDA-256MB-7200RPM_export_1abd9d5ccce1d91e961aff89d316c014.jpeg" alt="HDD Seagate Barracuda 2TB">
@@ -637,7 +649,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#crucialmx500">SSD Crucial MX500 1TB</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_993418-CBT50496147198_062022-F.webp" alt="SSD Crucial MX500 1TB">
@@ -646,7 +658,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-rigidos">
                     <article>
                         <h2><a href="producto.html#wdblue4tb">HDD WD Blue 4TB</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_783079-MLU72405569112_102023-O.webp" alt="HDD WD Blue 4TB">
@@ -655,7 +667,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#sandisk1tb">SSD SanDisk Ultra 1TB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9IORdMPOcqgML50N468oY-B3SUfXlcsVowjBBS3NDbQ&s" alt="SSD SanDisk Ultra 1TB">
@@ -664,7 +676,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#kbnv2500">SSD Kingston NV2 500GB</a></h2>
                         <img src="https://www.compu-santafe.com.ar/productos/get-imagen/40735" alt="SSD Kingston NV2 500GB">
@@ -673,7 +685,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-rigidos">
                     <article>
                         <h2><a href="producto.html#seagatefire2tb">HDD Seagate FireCuda 2TB</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_813587-MLA27792996085_072018-O.webp" alt="HDD Seagate FireCuda 2TB">
@@ -682,7 +694,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#crucialp3plus">SSD Crucial P3 Plus 2TB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbovrKueMJkmPq01Ki9DvvK_HYxI1GAsv8ygR4r78Jg&s=10" alt="SSD Crucial P3 Plus 2TB">
@@ -691,7 +703,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#wdsn770">WD Black SN770 1TB</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLZm_ldL4PjgQsfWYqFimuD2oHSpXa4OQw9cFj9znqA&s" alt="WD Black SN770 1TB">
@@ -700,7 +712,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="almacenamiento">
+                <li data-categoria="almacenamiento" data-subcategoria="discos-solidos">
                     <article>
                         <h2><a href="producto.html#samsung870evo">SSD Samsung 870 EVO 2TB</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_849326-CBT115398118836_082026-O.webp" alt="SSD Samsung 870 EVO 2TB">
@@ -1159,7 +1171,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="teclados">
                     <article>
                         <h2><a href="producto.html#razerbw4">Teclado Razer BlackWidow V4</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_673712-CBT82402411804_022025-F.webp">
@@ -1168,7 +1180,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="teclados">
                     <article>
                         <h2><a href="producto.html#ssapexpro">Teclado SteelSeries Apex Pro</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8leBKQfVFm0wTiKrycHhIYCSVpZ62iMrT7NvqJCvBg&s" alt="Teclado SteelSeries Apex Pro">
@@ -1177,7 +1189,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="teclados">
                     <article>
                         <h2><a href="producto.html#logitech915">Teclado Logitech G915 TKL</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_823772-MLA106812103958_022026-F.webp">
@@ -1186,7 +1198,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="mouses">
                     <article>
                         <h2><a href="producto.html#razerda3">Mouse Razer DeathAdder V3</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_783461-MLA95935675541_102025-F.webp">
@@ -1195,7 +1207,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="mouses">
                     <article>
                         <h2><a href="producto.html#ssrival600">Mouse SteelSeries Rival 600</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJg5c_3XIt7PXLE_4dBO48XMDtbJnewq20m1jgDEqDg&s" alt="Mouse SteelSeries Rival 600">
@@ -1204,7 +1216,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="mouses">
                     <article>
                         <h2><a href="producto.html#razervv2">Mouse Razer Viper V2</a></h2>
                         <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_42800_Mouse_Razer_Viper_V2_PRO_Wireless_2.4Ghz_Multi-Dispositivo_Black_Sensor_Focus_30K_58g_ec9f5c39-grn.jpg" alt="Mouse Razer Viper V2">
@@ -1213,7 +1225,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="mouses">
                     <article>
                         <h2><a href="producto.html#logitechsuperlight2">Mouse Logitech G Pro X Superlight 2</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_780614-MLA99968778347_112025-F.webp" alt="Mouse Logitech G Pro X Superlight 2">
@@ -1222,7 +1234,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="teclados">
                     <article>
                         <h2><a href="producto.html#corsairk70">Teclado Corsair K70 RGB</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_786389-MLA114505766121_072026-F.webp" alt="Teclado Corsair K70 RGB">
@@ -1232,7 +1244,7 @@
                     </article>
                 </li>
 
-                <li data-categoria="perifericos">
+                <li data-categoria="perifericos" data-subcategoria="mouses">
                     <article>
                         <h2><a href="producto.html#ssnova7">Mouse SteelSeries Arctis Nova 7</a></h2>
                         <img src="https://static.nb.com.ar/i/nb_MOUSE-GAMER-RAZER-BASILISK-V3-X-HYPERSPEED_ver_0fe9c6a878bfc26531e7faf4cd7e242f.jpg" alt="Mouse SteelSeries Arctis Nova 7">
@@ -1241,7 +1253,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#ssnova7pro">Auriculares SteelSeries Arctis Nova 7 Pro</a></h2>
                         <img src="https://images.fravega.com/f500/dafcc5b2aabadf413964c80d585dcbc8.jpg" alt="Auriculares SteelSeries Arctis Nova 7 Pro">
@@ -1250,7 +1262,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#razershark">Auriculares Razer BlackShark V2</a></h2>
                         <img src="https://katech.com.ar/wp-content/uploads/2024/11/x3-29.jpg" alt="Auriculares Razer BlackShark V2">
@@ -1259,7 +1271,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#logitechgpx">Auriculares Logitech G Pro X</a></h2>
                         <img src="https://mexx-img-2019.s3.amazonaws.com/38267_1.jpeg" alt="Auriculares Logitech G Pro X">
@@ -1268,7 +1280,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#cloud3">Auriculares HyperX Cloud III</a></h2>
                         <img src="https://fullh4rd.com.ar/img/productos/28/auricular-hp-hyperx-cloud-iii-black-wireless-77z45aa-0.jpg" alt="Auriculares HyperX Cloud III">
@@ -1277,7 +1289,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#ssnova3">Auriculares SteelSeries Arctis Nova 3</a></h2>
                         <img src="https://images.fravega.com/f1000/8e34c28bc97e2775773f89f48cc3c359.jpg" alt="Auriculares SteelSeries Arctis Nova 3">
@@ -1286,7 +1298,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#razerkraken4">Auriculares Razer Kraken V4</a></h2>
                         <img src="https://www.gamingcity.com.ar/thumb/imagen_14859_800x800.jpg" alt="Auriculares Razer Kraken V4">
@@ -1295,7 +1307,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#corsairhs80">Auriculares Corsair HS80 RGB</a></h2>
                         <img src="https://katech.com.ar/wp-content/uploads/AUR223-jpg.webp" alt="Auriculares Corsair HS80 RGB">
@@ -1304,7 +1316,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#jbl800">Auriculares JBL Quantum 800</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_868431-MLA54777876129_032023-O.webp" alt="Auriculares JBL Quantum 800">
@@ -1313,7 +1325,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#astro50x">Auriculares Astro A50 X</a></h2>
                         <img src="https://http2.mlstatic.com/D_Q_NP_863446-MLA91898495626_092025-F.webp" alt="Auriculares Astro A50 X">
@@ -1322,7 +1334,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="audio-gamer">
+                <li data-categoria="perifericos" data-subcategoria="auriculares">
                     <article>
                         <h2><a href="producto.html#creativeh6">Auriculares Creative Sound BlasterX H6</a></h2>
                         <img src="https://images.kabum.com.br/produtos/fotos/404807/headset-gamer-creative-sound-blaster-x-h6-drivers-50mm-usb-p3-pc-ps4-xbox-preto-70gh039000000_1672318605_gg.jpg" alt="Auriculares Creative Sound BlasterX H6">
@@ -1432,18 +1444,48 @@
 
             <div class="filtro-categorias">
                 <label for="cat-todos">Todos</label>
-                <label for="cat-placas-de-video">Placas de video</label>
-                <label for="cat-procesadores">Procesadores</label>
-                <label for="cat-mothers">Mothers</label>
+
+                <label for="cat-placas-de-video">Placas de video<span class="flecha" aria-hidden="true"></span></label>
+                <div class="subcategorias sub-placas-de-video">
+                    <label for="cat-placas-amd-radeon">Placas de video AMD Radeon</label>
+                    <label for="cat-placas-nvidia-geforce">Placas de video NVIDIA GeForce</label>
+                </div>
+
+                <label for="cat-procesadores">Procesadores<span class="flecha" aria-hidden="true"></span></label>
+                <div class="subcategorias sub-procesadores">
+                    <label for="cat-procesadores-amd">Procesadores AMD</label>
+                    <label for="cat-procesadores-intel">Procesadores Intel</label>
+                </div>
+
+                <label for="cat-mothers">Mothers<span class="flecha" aria-hidden="true"></span></label>
+                <div class="subcategorias sub-mothers">
+                    <label for="cat-mothers-amd">Mothers AMD</label>
+                    <label for="cat-mothers-intel">Mothers Intel</label>
+                </div>
+
                 <label for="cat-memorias-ram">Memorias RAM</label>
-                <label for="cat-almacenamiento">Almacenamiento</label>
+
+                <label for="cat-almacenamiento">Almacenamiento<span class="flecha" aria-hidden="true"></span></label>
+                <div class="subcategorias sub-almacenamiento">
+                    <label for="cat-discos-rigidos">Discos Rigidos</label>
+                    <label for="cat-discos-solidos">Discos solidos SSD</label>
+                </div>
+
                 <label for="cat-gabinetes">Gabinetes</label>
                 <label for="cat-monitores">Monitores</label>
                 <label for="cat-refrigeracion">Refrigeración</label>
                 <label for="cat-fuentes">Fuentes</label>
                 <label for="cat-sillas-gamers">Sillas gamers</label>
-                <label for="cat-perifericos">Periféricos (teclados, mouses, pads)</label>
-                <label for="cat-audio-gamer">Audio gamer</label>
+
+                <label for="cat-perifericos">Periféricos<span class="flecha" aria-hidden="true"></span></label>
+                <div class="subcategorias sub-perifericos">
+                    <label for="cat-teclados">Teclados</label>
+                    <label for="cat-mouses">Mouses</label>
+                    <label for="cat-pads">Mouse Pads</label>
+                    <label for="cat-microfonos">Microfonos</label>
+                    <label for="cat-auriculares">Auriculares</label>
+                </div>
+
                 <label for="cat-pcs-armadas">PCs armadas</label>
             </div>
         </aside>
@@ -1477,7 +1519,13 @@
 
             function categoriaActiva() {
                 const marcado = document.querySelector('.cat-input:checked');
-                return marcado ? marcado.value : 'todos';
+                if (!marcado) {
+                    return 'todos';
+                }
+                if (marcado.classList.contains('cat-padre')) {
+                    return 'todos';
+                }
+                return marcado.value;
             }
 
             function variantes(palabra) {
@@ -1510,7 +1558,9 @@
                     const titulo = li.querySelector('h2');
                     const nombre = titulo ? titulo.textContent.toLowerCase() : '';
                     const coincide = coincideCon(nombre, texto);
-                    const enCategoria = categoria === 'todos' || li.dataset.categoria === categoria;
+                    const enCategoria = categoria === 'todos'
+                        || li.dataset.categoria === categoria
+                        || li.dataset.subcategoria === categoria;
 
                     if (buscando) {
                         li.style.display = coincide ? 'flex' : 'none';
@@ -1529,6 +1579,45 @@
             campo.addEventListener('input', filtrar);
             Array.prototype.forEach.call(radios, function (radio) {
                 radio.addEventListener('change', filtrar);
+            });
+
+            Array.prototype.forEach.call(document.querySelectorAll('.cat-padre'), function (radio) {
+                const etiqueta = document.querySelector('label[for="' + radio.id + '"]');
+                if (!etiqueta) {
+                    return;
+                }
+
+                const menu = etiqueta.nextElementSibling;
+                const subIds = menu && menu.classList.contains('subcategorias')
+                    ? Array.prototype.map.call(menu.querySelectorAll('label[for]'), function (sub) {
+                        return sub.getAttribute('for');
+                    })
+                    : [];
+
+                function grupoAbierto() {
+                    if (radio.checked) {
+                        return true;
+                    }
+                    return subIds.some(function (id) {
+                        const sub = document.getElementById(id);
+                        return sub && sub.checked;
+                    });
+                }
+
+                etiqueta.addEventListener('click', function (evento) {
+                    if (!grupoAbierto()) {
+                        return;
+                    }
+                    evento.preventDefault();
+                    radio.checked = false;
+                    subIds.forEach(function (id) {
+                        const sub = document.getElementById(id);
+                        if (sub) {
+                            sub.checked = false;
+                        }
+                    });
+                    filtrar();
+                });
             });
 
             const parametro = new URLSearchParams(window.location.search).get('q');
