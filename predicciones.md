@@ -51,3 +51,5 @@ Predicciones
 25-agrego la barra de busqueda de productos en el header de los archivos.html.
 
 26-agrego el icono de lupa a la barra de busqueda.
+
+27-quiero agregar subcategorias dentro de las categorias que ya estan, eliminar la categoria audio gamer y agregarlo como auriculares y microfonos nombre dentro de la categoria perifericos.

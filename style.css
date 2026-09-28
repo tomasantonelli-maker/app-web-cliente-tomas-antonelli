@@ -3,10 +3,11 @@
 
 :root {
     --rojo: #dc2626;
-    --rojo-oscuro: #b91c1c;
+    --rojo-oscuro: #dc2626;
     --rojo-claro: #fef2f2;
     --blanco: #EEEEEE;
     --texto: #1f2937;
+    --texto-medio: #374151;
     --gris: #6b7280;
     --borde: #ececec;
 }
@@ -234,19 +235,31 @@ address { font-style: normal; }
 
 #cat-todos:checked ~ #destacados ul > li { display: flex; }
 
-#cat-placas-de-video:checked ~ #destacados ul > li:not([data-categoria="placas-de-video"]),
-#cat-procesadores:checked ~ #destacados ul > li:not([data-categoria="procesadores"]),
-#cat-mothers:checked ~ #destacados ul > li:not([data-categoria="mothers"]),
+/* Las categorias con subcategorias (placas, procesadores, mothers, almacenamiento,
+   perifericos) solo abren el menu: no filtran hasta que se elige una subcategoria. */
 #cat-memorias-ram:checked ~ #destacados ul > li:not([data-categoria="memorias-ram"]),
-#cat-almacenamiento:checked ~ #destacados ul > li:not([data-categoria="almacenamiento"]),
 #cat-gabinetes:checked ~ #destacados ul > li:not([data-categoria="gabinetes"]),
 #cat-monitores:checked ~ #destacados ul > li:not([data-categoria="monitores"]),
 #cat-refrigeracion:checked ~ #destacados ul > li:not([data-categoria="refrigeracion"]),
 #cat-fuentes:checked ~ #destacados ul > li:not([data-categoria="fuentes"]),
 #cat-sillas-gamers:checked ~ #destacados ul > li:not([data-categoria="sillas-gamers"]),
-#cat-perifericos:checked ~ #destacados ul > li:not([data-categoria="perifericos"]),
-#cat-audio-gamer:checked ~ #destacados ul > li:not([data-categoria="audio-gamer"]),
 #cat-pcs-armadas:checked ~ #destacados ul > li:not([data-categoria="pcs-armadas"]) {
+    display: none;
+}
+
+#cat-placas-amd-radeon:checked ~ #destacados ul > li:not([data-subcategoria="placas-amd-radeon"]),
+#cat-placas-nvidia-geforce:checked ~ #destacados ul > li:not([data-subcategoria="placas-nvidia-geforce"]),
+#cat-procesadores-amd:checked ~ #destacados ul > li:not([data-subcategoria="procesadores-amd"]),
+#cat-procesadores-intel:checked ~ #destacados ul > li:not([data-subcategoria="procesadores-intel"]),
+#cat-mothers-amd:checked ~ #destacados ul > li:not([data-subcategoria="mothers-amd"]),
+#cat-mothers-intel:checked ~ #destacados ul > li:not([data-subcategoria="mothers-intel"]),
+#cat-discos-rigidos:checked ~ #destacados ul > li:not([data-subcategoria="discos-rigidos"]),
+#cat-discos-solidos:checked ~ #destacados ul > li:not([data-subcategoria="discos-solidos"]),
+#cat-teclados:checked ~ #destacados ul > li:not([data-subcategoria="teclados"]),
+#cat-mouses:checked ~ #destacados ul > li:not([data-subcategoria="mouses"]),
+#cat-pads:checked ~ #destacados ul > li:not([data-subcategoria="pads"]),
+#cat-microfonos:checked ~ #destacados ul > li:not([data-subcategoria="microfonos"]),
+#cat-auriculares:checked ~ #destacados ul > li:not([data-subcategoria="auriculares"]) {
     display: none;
 }
 
@@ -260,6 +273,82 @@ address { font-style: normal; }
 .filtro-categorias label:hover {
     background: #EEEEEE;
     color: var(--rojo-oscuro);
+}
+
+/* ==== Subcategorías ==== */
+.subcategorias {
+    display: none;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid var(--borde);
+}
+
+#filtros .subcategorias label[for] {
+    padding-left: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--texto-medio);
+}
+
+#filtros .subcategorias label[for]:hover {
+    color: var(--rojo);
+}
+
+#cat-placas-de-video:checked ~ #filtros .sub-placas-de-video,
+#cat-placas-amd-radeon:checked ~ #filtros .sub-placas-de-video,
+#cat-placas-nvidia-geforce:checked ~ #filtros .sub-placas-de-video,
+#cat-procesadores:checked ~ #filtros .sub-procesadores,
+#cat-procesadores-amd:checked ~ #filtros .sub-procesadores,
+#cat-procesadores-intel:checked ~ #filtros .sub-procesadores,
+#cat-mothers:checked ~ #filtros .sub-mothers,
+#cat-mothers-amd:checked ~ #filtros .sub-mothers,
+#cat-mothers-intel:checked ~ #filtros .sub-mothers,
+#cat-almacenamiento:checked ~ #filtros .sub-almacenamiento,
+#cat-discos-rigidos:checked ~ #filtros .sub-almacenamiento,
+#cat-discos-solidos:checked ~ #filtros .sub-almacenamiento,
+#cat-perifericos:checked ~ #filtros .sub-perifericos,
+#cat-teclados:checked ~ #filtros .sub-perifericos,
+#cat-mouses:checked ~ #filtros .sub-perifericos,
+#cat-pads:checked ~ #filtros .sub-perifericos,
+#cat-microfonos:checked ~ #filtros .sub-perifericos,
+#cat-auriculares:checked ~ #filtros .sub-perifericos {
+    display: flex;
+}
+
+/* ==== Indicador de categorías con subcategorías ==== */
+.flecha {
+    display: inline-block;
+    margin-left: 0.4rem;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--rojo);
+    transform: rotate(-90deg);
+    transition: transform 0.15s ease;
+    vertical-align: middle;
+}
+
+#cat-placas-de-video:checked ~ #filtros label[for="cat-placas-de-video"] .flecha,
+#cat-placas-amd-radeon:checked ~ #filtros label[for="cat-placas-de-video"] .flecha,
+#cat-placas-nvidia-geforce:checked ~ #filtros label[for="cat-placas-de-video"] .flecha,
+#cat-procesadores:checked ~ #filtros label[for="cat-procesadores"] .flecha,
+#cat-procesadores-amd:checked ~ #filtros label[for="cat-procesadores"] .flecha,
+#cat-procesadores-intel:checked ~ #filtros label[for="cat-procesadores"] .flecha,
+#cat-mothers:checked ~ #filtros label[for="cat-mothers"] .flecha,
+#cat-mothers-amd:checked ~ #filtros label[for="cat-mothers"] .flecha,
+#cat-mothers-intel:checked ~ #filtros label[for="cat-mothers"] .flecha,
+#cat-almacenamiento:checked ~ #filtros label[for="cat-almacenamiento"] .flecha,
+#cat-discos-rigidos:checked ~ #filtros label[for="cat-almacenamiento"] .flecha,
+#cat-discos-solidos:checked ~ #filtros label[for="cat-almacenamiento"] .flecha,
+#cat-perifericos:checked ~ #filtros label[for="cat-perifericos"] .flecha,
+#cat-teclados:checked ~ #filtros label[for="cat-perifericos"] .flecha,
+#cat-mouses:checked ~ #filtros label[for="cat-perifericos"] .flecha,
+#cat-pads:checked ~ #filtros label[for="cat-perifericos"] .flecha,
+#cat-microfonos:checked ~ #filtros label[for="cat-perifericos"] .flecha,
+#cat-auriculares:checked ~ #filtros label[for="cat-perifericos"] .flecha {
+    transform: rotate(0deg);
 }
 
 /* ==== Botones ==== */
