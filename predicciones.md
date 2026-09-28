@@ -47,3 +47,5 @@ Predicciones
 23-voy a cambiar el background-color del detalle de cada producto.
 
 24-voy a hacer que los precios de los productos del index.html sean los mismos precios cuando se entra al detalle de los productos.
+
+25-agrego la barra de busqueda de productos en el header de los archivos.html.
