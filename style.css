@@ -456,7 +456,7 @@ main > article section:last-of-type a:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 caption, th, td { text-align: left; }
@@ -465,15 +465,34 @@ caption { font-weight: 700; color: var(--rojo-oscuro); margin-bottom: 0.5rem; }
 
 th, td { border: 1px solid var(--borde); padding: 0.7rem; }
 
-thead th { background: var(--rojo-claro); color: var(--rojo-oscuro); }
+thead th { color: var(--rojo-oscuro); }
 
-tbody tr:hover { background: var(--rojo-claro); }
 
 /* ==== Resumen carrito ==== */
 #resumen dl { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1rem; margin-bottom: 1rem; }
 #resumen dt { font-weight: 500; }
 #resumen dd { text-align: right; }
 #resumen dd strong { font-size: 1.3rem; color: var(--rojo-oscuro); }
+
+/* ==== Carrito: rectángulos blancos para contraste ==== */
+.pagina-carrito main > section {
+    background: #ffffff;
+    border: 1.7px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pagina-carrito th,
+.pagina-carrito td { border-color: #e0e0e0; }
+
+.pagina-carrito fieldset { border-color: #dcdcdc; }
+
+.pagina-carrito input[type="text"],
+.pagina-carrito input[type="email"],
+.pagina-carrito input[type="tel"],
+.pagina-carrito input[type="number"],
+.pagina-carrito select,
+.pagina-carrito textarea { border-color: #c9c9c9; }
 
 /* ==== Contacto ==== */
 main > section,
