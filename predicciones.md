@@ -45,3 +45,5 @@ Predicciones
 22-Cambio el background-color del body, de la etiqueta article, del header y del footer.
 
 23-voy a cambiar el background-color del detalle de cada producto.
+
+24-voy a hacer que los precios de los productos del index.html sean los mismos precios cuando se entra al detalle de los productos.
