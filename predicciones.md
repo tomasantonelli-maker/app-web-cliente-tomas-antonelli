@@ -49,3 +49,5 @@ Predicciones
 24-voy a hacer que los precios de los productos del index.html sean los mismos precios cuando se entra al detalle de los productos.
 
 25-agrego la barra de busqueda de productos en el header de los archivos.html.
+
+26-agrego el icono de lupa a la barra de busqueda.

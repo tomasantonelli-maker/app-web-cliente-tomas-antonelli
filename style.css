@@ -55,6 +55,7 @@ nav ul a:hover { color: var(--rojo); text-decoration: none; }
 
 /* ==== Buscador en el header ==== */
 .buscador {
+    position: relative;
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -63,7 +64,7 @@ nav ul a:hover { color: var(--rojo); text-decoration: none; }
 
 .buscador input[type="search"] {
     width: min(100%, 700px);
-    padding: 0.55rem 1rem;
+    padding: 0.55rem 2.75rem 0.55rem 1rem;
     border: 2px solid transparent;
     border-radius: 6px;
     background: var(--blanco);
@@ -73,6 +74,32 @@ nav ul a:hover { color: var(--rojo); text-decoration: none; }
     -webkit-appearance: none;
     appearance: none;
 }
+
+.buscador input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+
+.btn-buscar {
+    position: absolute;
+    top: 50%;
+    right: 0.4rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--gris);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-buscar:hover { background: rgba(0, 0, 0, 0.07); color: var(--rojo); }
+
+.btn-buscar:focus-visible { outline: 2px solid var(--rojo); outline-offset: 1px; }
+
+.btn-buscar svg { width: 1.15rem; height: 1.15rem; display: block; }
 
 .buscador input[type="search"]::placeholder {
     color: var(--gris);
