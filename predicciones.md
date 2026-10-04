@@ -57,3 +57,6 @@ Predicciones
 28-quiero que las secciones de carrito.html queden con tarjetas blancas con borde y sombra suave para que el contraste con el fondo gris se vea bien.
 
 29-quiero que las secciones de contacto.html queden con tarjetas blancas con borde y sombra suave para que el contraste con el fondo gris se vea bien.
+
+30-voy a hacer que mi pagina sea responsive.
+
