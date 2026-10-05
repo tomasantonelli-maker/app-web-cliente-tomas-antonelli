@@ -309,10 +309,9 @@ address { font-style: normal; }
     cursor: pointer;
     padding: 0.3rem 0.5rem;
     border-radius: 4px;
-    transition: background 0.15s, color 0.15s;
+    transition: color 0.15s;
 }
 .filtro-categorias label:hover {
-    background: #EEEEEE;
     color: var(--rojo-oscuro);
 }
 
@@ -748,5 +747,389 @@ article[id] {
     .pagina-carrito .tabla-scroll td:first-child {
         font-weight: 700;
         color: var(--texto);
+    }
+}
+
+/* ============================================================
+   ANIMACIONES (@keyframes)
+   ============================================================ */
+
+/* ---- Entradas ---- */
+@keyframes entrada-abajo {
+    from { opacity: 0; transform: translateY(-24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes entrada-arriba {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes entrada-izquierda {
+    from { opacity: 0; transform: translateX(-32px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes entrada-derecha {
+    from { opacity: 0; transform: translateX(32px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoom-suave {
+    from { opacity: 0; transform: scale(0.94); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes desplegar {
+    from { opacity: 0; transform: translateY(-8px) scaleY(0.96); }
+    to { opacity: 1; transform: translateY(0) scaleY(1); }
+}
+
+/* ---- Reutilizables ---- */
+@keyframes brillo {
+    from { transform: translateX(-150%) skewX(-20deg); }
+    to { transform: translateX(250%) skewX(-20deg); }
+}
+
+@keyframes latido {
+    0%, 100% { transform: scale(1); }
+    30% { transform: scale(1.14); }
+    60% { transform: scale(0.96); }
+}
+
+@keyframes pulso-sombra {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.35); }
+    70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+}
+
+@keyframes resplandor-borde {
+    from { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.35); }
+    to { box-shadow: 0 0 0 5px rgba(220, 38, 38, 0); }
+}
+
+@keyframes temblor {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+}
+
+@keyframes linea-brillante {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+/* ============================================================
+   PSEUDOELEMENTOS ::before y ::after
+   ============================================================ */
+
+/* ---- Enlaces del menú: subrayado que crece desde la izquierda ---- */
+nav ul a { position: relative; display: inline-block; }
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: var(--rojo);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav ul a:hover::after,
+nav ul a:focus-visible::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* ---- Botón menú hamburguesa: brillo + animación de las líneas ---- */
+.menu-toggle { overflow: hidden; }
+
+.menu-toggle svg line {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.menu-toggle[aria-expanded="true"] svg line:nth-of-type(1) { transform: translateY(5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] svg line:nth-of-type(2) { transform: scaleX(0); opacity: 0; }
+.menu-toggle[aria-expanded="true"] svg line:nth-of-type(3) { transform: translateY(-5px) rotate(-45deg); }
+
+.menu-toggle:hover svg { animation: latido 0.45s ease; }
+
+/* ---- Buscador: resplandor al enfocar ---- */
+.buscador input[type="search"]:focus { animation: resplandor-borde 0.45s ease; }
+
+/* ---- Botones: barrido de brillo al hacer hover ---- */
+button,
+input[type="submit"],
+#destacados article a[href="#"],
+main > article section:last-of-type a {
+    position: relative;
+    overflow: hidden;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+button:not(.btn-buscar)::before,
+#destacados article a[href="#"]::before,
+main > article section:last-of-type a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    transform: translateX(-150%) skewX(-20deg);
+    pointer-events: none;
+}
+
+button:not(.btn-buscar):hover::before,
+#destacados article a[href="#"]:hover::before,
+main > article section:last-of-type a:hover::before {
+    animation: brillo 0.7s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+    transform: translateY(-2px);
+}
+
+button:active,
+input[type="submit"]:active { transform: translateY(0); }
+
+/* El botón de búsqueda está centrado verticalmente con translateY(-50%):
+   se anula el desplazamiento del hover/active para que no se caiga. */
+.btn-buscar:hover,
+.btn-buscar:active {
+    transform: translateY(-50%);
+    box-shadow: none;
+}
+
+/* ---- Botones de envío: pulso para invitar a la acción ---- */
+button[type="submit"]:not(.btn-buscar) { animation: pulso-sombra 3s ease-in-out infinite; }
+
+/* ---- Títulos ---- */
+main > h1,
+main > section > h1 {
+    position: relative;
+    animation: entrada-arriba 0.5s 0.15s ease both;
+}
+
+/* ---- Subtítulos de sección: guión lateral decorativo ---- */
+main > section > h2 {
+    position: relative;
+    padding-left: 0.9rem;
+}
+
+main > section > h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    bottom: 0.15em;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--rojo);
+    transform: scaleY(0);
+    transform-origin: top;
+    animation: brillo-eje-y 0.5s 0.4s ease both;
+}
+
+@keyframes brillo-eje-y {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+}
+
+/* ---- Contenido principal: entrada suave ---- */
+main { animation: entrada-arriba 0.5s ease both; }
+
+/* ---- Panel de filtros ---- */
+#filtros {
+    position: relative;
+    animation: entrada-izquierda 0.5s 0.1s ease both;
+}
+
+.filtro-categorias label { transition: color 0.15s, transform 0.2s ease; }
+
+.filtro-categorias label:hover {
+    color: var(--rojo-oscuro);
+    transform: translateX(5px);
+}
+
+/* ---- Subcategorías: indicador que aparece al hacer hover ---- */
+#filtros .subcategorias label[for]::before {
+    content: "›";
+    display: inline-block;
+    margin-right: 0.3rem;
+    color: var(--rojo);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#filtros .subcategorias label[for]:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---- Grilla de productos: entradas escalonadas ---- */
+#destacados { animation: entrada-derecha 0.5s 0.1s ease both; }
+
+#destacados ul > li:nth-child(1) { animation: zoom-suave 0.4s 0.20s ease both; }
+#destacados ul > li:nth-child(2) { animation: zoom-suave 0.4s 0.25s ease both; }
+#destacados ul > li:nth-child(3) { animation: zoom-suave 0.4s 0.30s ease both; }
+#destacados ul > li:nth-child(4) { animation: zoom-suave 0.4s 0.35s ease both; }
+#destacados ul > li:nth-child(5) { animation: zoom-suave 0.4s 0.40s ease both; }
+#destacados ul > li:nth-child(6) { animation: zoom-suave 0.4s 0.45s ease both; }
+#destacados ul > li:nth-child(7) { animation: zoom-suave 0.4s 0.50s ease both; }
+#destacados ul > li:nth-child(8) { animation: zoom-suave 0.4s 0.55s ease both; }
+#destacados ul > li:nth-child(9) { animation: zoom-suave 0.4s 0.60s ease both; }
+#destacados ul > li:nth-child(10) { animation: zoom-suave 0.4s 0.65s ease both; }
+#destacados ul > li:nth-child(11) { animation: zoom-suave 0.4s 0.70s ease both; }
+#destacados ul > li:nth-child(12) { animation: zoom-suave 0.4s 0.75s ease both; }
+#destacados ul > li:nth-child(n+13) { animation: zoom-suave 0.4s 0.8s ease both; }
+
+/* ---- Tarjeta de producto: elevación + barra superior al hacer hover ---- */
+#destacados article {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#destacados article::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--rojo), #f87171);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+#destacados article:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+    transform: translateY(-6px);
+}
+
+#destacados article:hover::after { transform: scaleX(1); }
+
+#destacados article a[href="#"]:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* ---- Menú móvil: desplegable con ítems escalonados ---- */
+header nav.menu-abierto ul {
+    animation: desplegar 0.3s ease both;
+    transform-origin: top;
+}
+
+header nav.menu-abierto ul li:nth-child(1) { animation: entrada-abajo 0.3s 0.05s ease both; }
+header nav.menu-abierto ul li:nth-child(2) { animation: entrada-abajo 0.3s 0.1s ease both; }
+header nav.menu-abierto ul li:nth-child(3) { animation: entrada-abajo 0.3s 0.15s ease both; }
+header nav.menu-abierto ul li:nth-child(4) { animation: entrada-abajo 0.3s 0.2s ease both; }
+header nav.menu-abierto ul li:nth-child(5) { animation: entrada-abajo 0.3s 0.25s ease both; }
+
+#filtros.filtros-abierto .filtro-categorias { animation: desplegar 0.3s ease both; transform-origin: top; }
+
+/* ---- Categorías con subcategorías: lista desplegada con animación ---- */
+#filtros .subcategorias { animation: desplegar 0.25s ease both; transform-origin: top; }
+
+/* ---- Secciones de contacto/datos: entrada ---- */
+main > section,
+#datos { animation: entrada-arriba 0.5s 0.15s ease both; }
+
+/* ---- Detalle de producto (:target): entrada ---- */
+main > article:target { animation: entrada-arriba 0.4s ease both; }
+
+/* ---- Formularios: temblor en campos inválidos ya editados ---- */
+input:user-invalid,
+textarea:user-invalid,
+select:user-invalid {
+    animation: temblor 0.4s ease;
+    border-color: var(--rojo);
+}
+
+/* ---- Sin resultados: lupa dibujada con pseudoelementos ---- */
+#sin-resultados {
+    position: relative;
+    padding-top: 4rem;
+    animation: aparecer 0.4s ease both;
+}
+
+#sin-resultados::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -13px;
+    width: 26px;
+    height: 26px;
+    border: 3px solid var(--gris);
+    border-radius: 50%;
+    animation: latido 1.6s ease-in-out infinite;
+}
+
+#sin-resultados::after {
+    content: "";
+    position: absolute;
+    top: calc(2rem + 9px);
+    left: calc(50% - 3px);
+    width: 12px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--gris);
+    transform-origin: left center;
+    transform: rotate(45deg);
+}
+
+/* ---- Migas de pan: separadores con ::before ---- */
+main > nav[aria-label="Migas de pan"] li + li::before {
+    content: "›";
+    margin-right: 0.5rem;
+    color: var(--rojo);
+    font-weight: 700;
+}
+
+/* ---- Footer: línea superior con brillo animado ---- */
+footer { position: relative; animation: entrada-arriba 0.5s 0.2s ease both; }
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--rojo), #ffffff, var(--rojo));
+    background-size: 200% 100%;
+    animation: linea-brillante 5s linear infinite;
+}
+
+/* ============================================================
+   ACCESIBILIDAD: respetar prefers-reduced-motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

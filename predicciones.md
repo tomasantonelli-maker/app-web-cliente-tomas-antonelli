@@ -60,3 +60,4 @@ Predicciones
 
 30-voy a hacer que mi pagina sea responsive.
 
+31-voy a agregar animaciones a la pagina con @keyframes y pseudoelementos.
