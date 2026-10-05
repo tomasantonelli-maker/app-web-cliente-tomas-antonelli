@@ -21,7 +21,10 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
             </button>
         </form>
-        <nav aria-label="Navegación principal">
+        <button type="button" class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="menu-principal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+        <nav aria-label="Navegación principal" id="menu-principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html#destacados">Productos</a></li>
@@ -45,48 +48,50 @@
         <section aria-labelledby="articulos-titulo">
             <h2 id="articulos-titulo">Artículos en tu carrito</h2>
 
-            <table>
-                <caption>Productos agregados al carrito</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Precio unitario</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Subtotal</th>
-                        <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Notebook Lenovo IdeaPad 3</td>
-                        <td>$459.990</td>
-                        <td>1</td>
-                        <td>$459.990</td>
-                        <td><a href="#">Eliminar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Monitor Samsung 24"</td>
-                        <td>$189.990</td>
-                        <td>1</td>
-                        <td>$189.990</td>
-                        <td><a href="#">Eliminar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Teclado Mecánico Redragon</td>
-                        <td>$34.990</td>
-                        <td>1</td>
-                        <td>$34.990</td>
-                        <td><a href="#">Eliminar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Mouse Gamer Logitech G502</td>
-                        <td>$29.990</td>
-                        <td>2</td>
-                        <td>$59.980</td>
-                        <td><a href="#">Eliminar</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tabla-scroll">
+                <table>
+                    <caption>Productos agregados al carrito</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio unitario</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Producto">Notebook Lenovo IdeaPad 3</td>
+                            <td data-label="Precio unitario">$459.990</td>
+                            <td data-label="Cantidad">1</td>
+                            <td data-label="Subtotal">$459.990</td>
+                            <td data-label="Acciones"><a href="#">Eliminar</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Producto">Monitor Samsung 24"</td>
+                            <td data-label="Precio unitario">$189.990</td>
+                            <td data-label="Cantidad">1</td>
+                            <td data-label="Subtotal">$189.990</td>
+                            <td data-label="Acciones"><a href="#">Eliminar</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Producto">Teclado Mecánico Redragon</td>
+                            <td data-label="Precio unitario">$34.990</td>
+                            <td data-label="Cantidad">1</td>
+                            <td data-label="Subtotal">$34.990</td>
+                            <td data-label="Acciones"><a href="#">Eliminar</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Producto">Mouse Gamer Logitech G502</td>
+                            <td data-label="Precio unitario">$29.990</td>
+                            <td data-label="Cantidad">2</td>
+                            <td data-label="Subtotal">$59.980</td>
+                            <td data-label="Acciones"><a href="#">Eliminar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section aria-labelledby="resumen-titulo">
@@ -170,5 +175,6 @@
 
         <p>&copy; 2026 Ultra Hardware. Todos los derechos reservados.</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 </html>
