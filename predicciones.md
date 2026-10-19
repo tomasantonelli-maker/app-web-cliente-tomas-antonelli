@@ -61,3 +61,6 @@ Predicciones
 30-voy a hacer que mi pagina sea responsive.
 
 31-voy a agregar animaciones a la pagina con @keyframes y pseudoelementos.
+
+32-voy a quitar varios productos en el index.html, dejar algunos como destacados y sacar la animacion que esta en el footer.
+
