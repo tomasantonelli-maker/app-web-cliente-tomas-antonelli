@@ -274,7 +274,11 @@ address { font-style: normal; }
 /* ==== Filtrado por categoría (CSS only) ==== */
 #destacados ul > li { display: flex; }
 
-#cat-todos:checked ~ #destacados ul > li { display: flex; }
+/* En la vista "Todos" (inicio) solo se muestran los productos destacados.
+   Al elegir una categoría o subcategoría se muestran TODOS los productos
+   de esa categoría, sin importar si están destacados o no. */
+#cat-todos:checked ~ #destacados ul > li:not([data-destacado]) { display: none; }
+#cat-todos:checked ~ #destacados ul > li[data-destacado] { display: flex; }
 
 /* Las categorias con subcategorias (placas, procesadores, mothers, almacenamiento,
    perifericos) solo abren el menu: no filtran hasta que se elige una subcategoria. */
@@ -820,11 +824,6 @@ article[id] {
     80% { transform: translateX(4px); }
 }
 
-@keyframes linea-brillante {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 200% 50%; }
-}
-
 /* ============================================================
    PSEUDOELEMENTOS ::before y ::after
    ============================================================ */
@@ -1106,20 +1105,8 @@ main > nav[aria-label="Migas de pan"] li + li::before {
     font-weight: 700;
 }
 
-/* ---- Footer: línea superior con brillo animado ---- */
-footer { position: relative; animation: entrada-arriba 0.5s 0.2s ease both; }
-
-footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--rojo), #ffffff, var(--rojo));
-    background-size: 200% 100%;
-    animation: linea-brillante 5s linear infinite;
-}
+/* ---- Footer: animación de entrada ---- */
+footer { animation: entrada-arriba 0.5s 0.2s ease both; }
 
 /* ============================================================
    ACCESIBILIDAD: respetar prefers-reduced-motion
