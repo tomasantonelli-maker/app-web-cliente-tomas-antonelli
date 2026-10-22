@@ -203,6 +203,7 @@ address { font-style: normal; }
 #destacados article:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); }
 #destacados article img { align-self: center; object-fit: contain; width: 200px; height: 200px; }
 #destacados article h2 { font-size: 0.95rem; margin: 0; min-height: 2.4em; line-height: 1.3; }
+#destacados article h2 a:hover { text-decoration: none; }
 #destacados article p { font-size: 0.85rem; color: var(--gris); }
 #destacados article p:first-of-type { flex: 1; }
 
@@ -213,6 +214,9 @@ address { font-style: normal; }
     padding: 0.6rem 1rem;
     border-radius: 6px;
     font-weight: 600;
+    /* Queda por encima de la tarjeta cliqueable para seguir siendo utilizable */
+    position: relative;
+    z-index: 2;
 }
 
 #destacados article a[href="#"]:hover {
@@ -275,13 +279,29 @@ address { font-style: normal; }
 #destacados ul > li { display: flex; }
 
 /* En la vista "Todos" (inicio) solo se muestran los productos destacados.
-   Al elegir una categoría o subcategoría se muestran TODOS los productos
+   Al elegir una categoría o subcategoría hoja se muestran TODOS los productos
    de esa categoría, sin importar si están destacados o no. */
-#cat-todos:checked ~ #destacados ul > li:not([data-destacado]) { display: none; }
-#cat-todos:checked ~ #destacados ul > li[data-destacado] { display: flex; }
+#cat-todos:checked ~ #destacados ul > li:not([data-destacado]),
+#cat-placas-de-video:checked ~ #destacados ul > li:not([data-destacado]),
+#cat-procesadores:checked ~ #destacados ul > li:not([data-destacado]),
+#cat-mothers:checked ~ #destacados ul > li:not([data-destacado]),
+#cat-almacenamiento:checked ~ #destacados ul > li:not([data-destacado]),
+#cat-perifericos:checked ~ #destacados ul > li:not([data-destacado]) {
+    display: none;
+}
+
+#cat-todos:checked ~ #destacados ul > li[data-destacado],
+#cat-placas-de-video:checked ~ #destacados ul > li[data-destacado],
+#cat-procesadores:checked ~ #destacados ul > li[data-destacado],
+#cat-mothers:checked ~ #destacados ul > li[data-destacado],
+#cat-almacenamiento:checked ~ #destacados ul > li[data-destacado],
+#cat-perifericos:checked ~ #destacados ul > li[data-destacado] {
+    display: flex;
+}
 
 /* Las categorias con subcategorias (placas, procesadores, mothers, almacenamiento,
-   perifericos) solo abren el menu: no filtran hasta que se elige una subcategoria. */
+   perifericos) solo abren el menu: no filtran hasta que se elige una subcategoria,
+   por lo que mantienen la vista por defecto con los productos destacados. */
 #cat-memorias-ram:checked ~ #destacados ul > li:not([data-categoria="memorias-ram"]),
 #cat-gabinetes:checked ~ #destacados ul > li:not([data-categoria="gabinetes"]),
 #cat-monitores:checked ~ #destacados ul > li:not([data-categoria="monitores"]),
@@ -359,6 +379,13 @@ address { font-style: normal; }
 #cat-auriculares:checked ~ #filtros .sub-perifericos {
     display: flex;
 }
+
+/* El submenú también se abre por JS con la clase .grupo-abierto, sin marcar
+   la categoría padre: así el filtro activo no cambia hasta elegir una
+   subcategoría. */
+#filtros .subcategorias.grupo-abierto { display: flex; }
+
+#filtros label[for].grupo-abierto .flecha { transform: rotate(0deg); }
 
 /* ==== Indicador de categorías con subcategorías ==== */
 .flecha {
@@ -1025,6 +1052,31 @@ main { animation: entrada-arriba 0.5s ease both; }
 }
 
 #destacados article:hover::after { transform: scaleX(1); }
+
+/* ---- Toda la tarjeta es cliqueable ("enlace estirado") ----
+   El enlace del título se expande con un pseudo-elemento hasta cubrir
+   el article completo (imagen, descripción, precio y fondo), sin anidar
+   enlaces dentro del enlace "Agregar al carrito". */
+#destacados article {
+    cursor: pointer;
+}
+
+#destacados article h2 a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+#destacados article h2 a:focus-visible {
+    outline: none;
+}
+
+#destacados article h2 a:focus-visible::before {
+    outline: 2px solid var(--rojo);
+    outline-offset: 3px;
+}
 
 #destacados article a[href="#"]:hover {
     text-decoration: none;
