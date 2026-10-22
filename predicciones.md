@@ -64,3 +64,4 @@ Predicciones
 
 32-voy a quitar varios productos en el index.html, dejar algunos como destacados y sacar la animacion que esta en el footer.
 
+33-voy a ampliar el area interactiva de la tarjeta de cada producto para permitir el acceso al detalle desde cualquier parte del elemento, no solo desde el título.   
