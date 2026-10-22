@@ -1585,8 +1585,33 @@
             }
 
             campo.addEventListener('input', filtrar);
+
+            const grupos = Array.prototype.slice.call(document.querySelectorAll('#filtros .subcategorias'));
+
+            function grupoDeRadio(radio) {
+                const etiqueta = document.querySelector('label[for="' + radio.id + '"]');
+                const contenedor = etiqueta ? etiqueta.parentElement : null;
+                return contenedor && contenedor.classList.contains('subcategorias') ? contenedor : null;
+            }
+
+            // Deja abierto el submenú indicado (si lo hay) y cierra el resto.
+            function sincronizarGrupos(abierto) {
+                grupos.forEach(function (menu) {
+                    const etiqueta = menu.previousElementSibling;
+                    const activo = menu === abierto;
+
+                    menu.classList.toggle('grupo-abierto', activo);
+                    if (etiqueta) {
+                        etiqueta.classList.toggle('grupo-abierto', activo);
+                    }
+                });
+            }
+
             Array.prototype.forEach.call(radios, function (radio) {
-                radio.addEventListener('change', filtrar);
+                radio.addEventListener('change', function () {
+                    sincronizarGrupos(grupoDeRadio(radio));
+                    filtrar();
+                });
             });
 
             Array.prototype.forEach.call(document.querySelectorAll('.cat-padre'), function (radio) {
@@ -1596,16 +1621,15 @@
                 }
 
                 const menu = etiqueta.nextElementSibling;
-                const subIds = menu && menu.classList.contains('subcategorias')
-                    ? Array.prototype.map.call(menu.querySelectorAll('label[for]'), function (sub) {
-                        return sub.getAttribute('for');
-                    })
-                    : [];
+                if (!menu || !menu.classList.contains('subcategorias')) {
+                    return;
+                }
 
-                function grupoAbierto() {
-                    if (radio.checked) {
-                        return true;
-                    }
+                const subIds = Array.prototype.map.call(menu.querySelectorAll('label[for]'), function (sub) {
+                    return sub.getAttribute('for');
+                });
+
+                function subcategoriaActiva() {
                     return subIds.some(function (id) {
                         const sub = document.getElementById(id);
                         return sub && sub.checked;
@@ -1613,18 +1637,22 @@
                 }
 
                 etiqueta.addEventListener('click', function (evento) {
-                    if (!grupoAbierto()) {
+                    // La categoría padre ya no filtra: solo abre o cierra su
+                    // submenú. Los productos visibles se mantienen hasta que se
+                    // elige una subcategoría (o "Todos").
+                    evento.preventDefault();
+
+                    if (menu.classList.contains('grupo-abierto')) {
+                        // Si hay una subcategoría aplicada se deja abierto, para
+                        // no perder de vista el filtro activo.
+                        if (!subcategoriaActiva()) {
+                            menu.classList.remove('grupo-abierto');
+                            etiqueta.classList.remove('grupo-abierto');
+                        }
                         return;
                     }
-                    evento.preventDefault();
-                    radio.checked = false;
-                    subIds.forEach(function (id) {
-                        const sub = document.getElementById(id);
-                        if (sub) {
-                            sub.checked = false;
-                        }
-                    });
-                    filtrar();
+
+                    sincronizarGrupos(menu);
                 });
             });
 
