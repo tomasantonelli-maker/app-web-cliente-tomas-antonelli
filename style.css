@@ -32,17 +32,29 @@ header {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
-    gap:4rem;
+    gap: clamp(1rem, 4vw, 4rem);
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-header > p { justify-self: start; transform: translateX(21.5rem); }
+header > p {
+    justify-self: end;
+    min-width: 0;
+    max-width: 100%;
+}
 header nav { justify-self: start; }
 
 header > p a { font-size: 1.5rem; font-weight: 700; color: var(--texto);  }
 header > p a:hover { color: var(--rojo); }
+
+/* El logo se adapta al ancho disponible sin deformarse ni desbordar el header */
+header > p img {
+    display: block;
+    width: clamp(96px, 14vw, 150px);
+    max-width: 100%;
+    height: auto;
+}
 
 nav ul {
     list-style: none;
@@ -645,7 +657,6 @@ footer > p {
     }
 
     header > p { grid-area: logo; justify-self: start; }
-    header > p img { width: 120px; height: auto; }
 
     .buscador {
         grid-area: buscador;
@@ -695,7 +706,6 @@ footer > p {
 }
 
 @media (max-width: 480px) {
-    header > p img { width: 100px; height: auto; }
     #destacados article img { width: 160px; height: 160px; }
     main > section,
     #filtros,
