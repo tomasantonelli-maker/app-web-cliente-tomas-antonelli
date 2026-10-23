@@ -32,23 +32,25 @@ header {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
-    gap: 1rem;
+    gap:4rem;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-header > p { justify-self: start; }
-header nav { justify-self: end; }
+header > p { justify-self: start; transform: translateX(21.5rem); }
+header nav { justify-self: start; }
 
-header > p a { font-size: 1.5rem; font-weight: 700; color: var(--texto); }
+header > p a { font-size: 1.5rem; font-weight: 700; color: var(--texto);  }
 header > p a:hover { color: var(--rojo); }
 
 nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2.5rem;
+    
+    
 }
 
 nav ul a { color: rgba(255, 255, 255, 0.904); font-weight: 500; }
