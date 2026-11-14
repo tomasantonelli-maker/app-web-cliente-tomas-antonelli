@@ -36,6 +36,7 @@
 
     <main>
         <input type="radio" id="cat-todos" name="cat" value="todos" checked class="cat-input">
+        <input type="radio" id="cat-notebooks" name="cat" value="notebooks" class="cat-input">
         <input type="radio" id="cat-placas-de-video" name="cat" value="placas-de-video" class="cat-input cat-padre">
         <input type="radio" id="cat-procesadores" name="cat" value="procesadores" class="cat-input cat-padre">
         <input type="radio" id="cat-mothers" name="cat" value="mothers" class="cat-input cat-padre">
@@ -43,7 +44,7 @@
         <input type="radio" id="cat-almacenamiento" name="cat" value="almacenamiento" class="cat-input cat-padre">
         <input type="radio" id="cat-gabinetes" name="cat" value="gabinetes" class="cat-input">
         <input type="radio" id="cat-monitores" name="cat" value="monitores" class="cat-input">
-        <input type="radio" id="cat-refrigeracion" name="cat" value="refrigeracion" class="cat-input">
+        <input type="radio" id="cat-refrigeracion" name="cat" value="refrigeracion" class="cat-input cat-padre">
         <input type="radio" id="cat-fuentes" name="cat" value="fuentes" class="cat-input">
         <input type="radio" id="cat-sillas-gamers" name="cat" value="sillas-gamers" class="cat-input">
         <input type="radio" id="cat-perifericos" name="cat" value="perifericos" class="cat-input cat-padre">
@@ -61,12 +62,14 @@
         <input type="radio" id="cat-pads" name="cat" value="pads" class="cat-input">
         <input type="radio" id="cat-microfonos" name="cat" value="microfonos" class="cat-input">
         <input type="radio" id="cat-auriculares" name="cat" value="auriculares" class="cat-input">
+        <input type="radio" id="cat-coolers-fan" name="cat" value="coolers-fan" class="cat-input">
+        <input type="radio" id="cat-coolers-cpu" name="cat" value="coolers-cpu" class="cat-input">
 
         <section id="destacados" aria-labelledby="destacados-titulo">
             <h1 id="destacados-titulo">Productos destacados</h1>
 
             <ul>
-                <li data-categoria="pcs-armadas">
+                <li data-categoria="notebooks">
                     <article>
                         <h2><a href="producto.html#notebook">Notebook Lenovo IdeaPad 3</a></h2>
                         <img src="https://www.deffo.com.ar/wp-content/uploads/2024/03/IdeaPad-Slim-3-15IAN8-11-600x600.webp" alt="Notebook Lenovo IdeaPad 3">
@@ -228,7 +231,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-destacado data-categoria="refrigeracion">
+                <li data-destacado data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#refrigeracion">Refrigeración Líquida Corsair H150i</a></h2>
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQVCUjV71EOJ41z2GASIeQT4_dQds38X_kKt-e7LrsdDuPORsGVO2M8pjQeO8tSZstQBwVt08TtZLSjl-9cACgexGCvGN3lwJT4ueIbvyw" alt="Refrigeración líquida Corsair H150i 360mm">
@@ -903,7 +906,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-destacado data-categoria="refrigeracion">
+                <li data-destacado data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#nzxtx63">Refrigeracion NZXT Kraken X63 280</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JanMYXC8pNyf6I0vfqGg0PCcfjmnxBiElf4lmrjDKw&s" alt="Refrigeracion NZXT Kraken X63 280">
@@ -912,7 +915,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#arctic280">Refrigeracion Arctic Liquid Freezer II 280</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQGSf3R7Qyd1EP6CxidLv-FhZ1JNpgS3FaNVwq11eVA&s" alt="Refrigeracion Arctic Liquid Freezer II 280">
@@ -921,7 +924,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#dkak620">Refrigeracion DeepCool AK620</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5CGd0YW7mIvAaW-PSml254qXTQG3tMx4o098yUTC7HA&s=10" alt="Refrigeracion DeepCool AK620">
@@ -930,7 +933,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#bqdrp4">Refrigeracion be quiet! Dark Rock Pro 4</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnlTNgycawrQy8WAptphsoaZxW1Z_Fw3wT9p3OeOIFuw&s" alt="Refrigeracion be quiet! Dark Rock Pro 4">
@@ -939,7 +942,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-destacado data-categoria="refrigeracion">
+                <li data-destacado data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#noctuad15">Refrigeracion Noctua NH-D15</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR1jQFCd-S2HD-7ocA4L2F82zoU68V-HRxuMGBLPEGqb_jcVYh33b6lFUhui9-LCuChm3d-U_4SHJfs-ubqsnEGDE0oxvelqTM38NYWZZfeY9KAexafkF7ucgv9xSofslq5i5wQYfvtsJU&usqp=CAc" alt="Refrigeracion Noctua NH-D15">
@@ -948,7 +951,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#corsairh100i">Refrigeracion Corsair H100i</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgd7FOLJfyUgUTJBjh7w5ieLi9its_hcTBoOwxXuyQNQ&s" alt="Refrigeracion Corsair H100i">
@@ -957,7 +960,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#trpa120">Refrigeracion Thermalright Peerless Assassin 120</a></h2>
                         <img src="https://http2.mlstatic.com/D_NQ_NP_971999-CBT112612469252_062026-O.webp" alt="Refrigeracion Thermalright Peerless Assassin 120">
@@ -966,7 +969,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#dkak400">Refrigeracion DeepCool AK400</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOeAIKxprLCWj9mD92RbTlo9iOGuihXvAcHu8PZsB0uw&s" alt="Refrigeracion DeepCool AK400">
@@ -975,7 +978,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-fan">
                     <article>
                         <h2><a href="producto.html#arcticp12">Refrigeracion Arctic P12 PWM</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9m4CFa2iUJgLuz44gR_e2sG9IZWwCyxdGLdWBo66rzg&s" alt="Refrigeracion Arctic P12 PWM">
@@ -984,7 +987,7 @@
                         <a href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li data-categoria="refrigeracion">
+                <li data-categoria="refrigeracion" data-subcategoria="coolers-cpu">
                     <article>
                         <h2><a href="producto.html#noctuah12s">Refrigeracion Noctua NH-U12S</a></h2>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFafkzd45gDxCjTX_AkmwBPXpPxnIyPMAouUtD8zEtFQ&s" alt="Refrigeracion Noctua NH-U12S">
@@ -1452,6 +1455,8 @@
             <div class="filtro-categorias" id="filtros-lista">
                 <label for="cat-todos">Todos</label>
 
+                <label for="cat-notebooks">Notebooks</label>
+
                 <label for="cat-placas-de-video">Placas de video<span class="flecha" aria-hidden="true"></span></label>
                 <div class="subcategorias sub-placas-de-video">
                     <label for="cat-placas-amd-radeon">Placas de video AMD Radeon</label>
@@ -1480,7 +1485,11 @@
 
                 <label for="cat-gabinetes">Gabinetes</label>
                 <label for="cat-monitores">Monitores</label>
-                <label for="cat-refrigeracion">Refrigeración</label>
+                <label for="cat-refrigeracion">Refrigeración<span class="flecha" aria-hidden="true"></span></label>
+                <div class="subcategorias sub-refrigeracion">
+                    <label for="cat-coolers-fan">Coolers Fan</label>
+                    <label for="cat-coolers-cpu">Coolers CPU</label>
+                </div>
                 <label for="cat-fuentes">Fuentes</label>
                 <label for="cat-sillas-gamers">Sillas gamers</label>
 
