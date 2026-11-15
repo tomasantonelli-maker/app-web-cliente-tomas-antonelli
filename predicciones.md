@@ -71,3 +71,5 @@ Predicciones:
 35-Voy a solucionar el problema del logo, que dejo de ser responsive.
 
 36-Voy a agregar una categoria nueva que se va a llamar Notebooks y sub-categorias a refrigeracion que van a ser Coolers Fan y Coolers CPU y a Perifericos que va a ser Webcam.
+
+37-Voy a conectar mi página web con Supabase para guardar los productos en una tabla y poder agregarlos sin escribirlos a mano en el HTML.
