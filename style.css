@@ -300,6 +300,7 @@ address { font-style: normal; }
 #cat-procesadores:checked ~ #destacados ul > li:not([data-destacado]),
 #cat-mothers:checked ~ #destacados ul > li:not([data-destacado]),
 #cat-almacenamiento:checked ~ #destacados ul > li:not([data-destacado]),
+#cat-refrigeracion:checked ~ #destacados ul > li:not([data-destacado]),
 #cat-perifericos:checked ~ #destacados ul > li:not([data-destacado]) {
     display: none;
 }
@@ -309,17 +310,18 @@ address { font-style: normal; }
 #cat-procesadores:checked ~ #destacados ul > li[data-destacado],
 #cat-mothers:checked ~ #destacados ul > li[data-destacado],
 #cat-almacenamiento:checked ~ #destacados ul > li[data-destacado],
+#cat-refrigeracion:checked ~ #destacados ul > li[data-destacado],
 #cat-perifericos:checked ~ #destacados ul > li[data-destacado] {
     display: flex;
 }
 
 /* Las categorias con subcategorias (placas, procesadores, mothers, almacenamiento,
-   perifericos) solo abren el menu: no filtran hasta que se elige una subcategoria,
-   por lo que mantienen la vista por defecto con los productos destacados. */
+   refrigeracion, perifericos) solo abren el menu: no filtran hasta que se elige una
+   subcategoria, por lo que mantienen la vista por defecto con los productos destacados. */
+#cat-notebooks:checked ~ #destacados ul > li:not([data-categoria="notebooks"]),
 #cat-memorias-ram:checked ~ #destacados ul > li:not([data-categoria="memorias-ram"]),
 #cat-gabinetes:checked ~ #destacados ul > li:not([data-categoria="gabinetes"]),
 #cat-monitores:checked ~ #destacados ul > li:not([data-categoria="monitores"]),
-#cat-refrigeracion:checked ~ #destacados ul > li:not([data-categoria="refrigeracion"]),
 #cat-fuentes:checked ~ #destacados ul > li:not([data-categoria="fuentes"]),
 #cat-sillas-gamers:checked ~ #destacados ul > li:not([data-categoria="sillas-gamers"]),
 #cat-pcs-armadas:checked ~ #destacados ul > li:not([data-categoria="pcs-armadas"]) {
@@ -337,6 +339,8 @@ address { font-style: normal; }
 #cat-teclados:checked ~ #destacados ul > li:not([data-subcategoria="teclados"]),
 #cat-mouses:checked ~ #destacados ul > li:not([data-subcategoria="mouses"]),
 #cat-pads:checked ~ #destacados ul > li:not([data-subcategoria="pads"]),
+#cat-coolers-fan:checked ~ #destacados ul > li:not([data-subcategoria="coolers-fan"]),
+#cat-coolers-cpu:checked ~ #destacados ul > li:not([data-subcategoria="coolers-cpu"]),
 #cat-microfonos:checked ~ #destacados ul > li:not([data-subcategoria="microfonos"]),
 #cat-auriculares:checked ~ #destacados ul > li:not([data-subcategoria="auriculares"]) {
     display: none;
@@ -385,6 +389,9 @@ address { font-style: normal; }
 #cat-almacenamiento:checked ~ #filtros .sub-almacenamiento,
 #cat-discos-rigidos:checked ~ #filtros .sub-almacenamiento,
 #cat-discos-solidos:checked ~ #filtros .sub-almacenamiento,
+#cat-refrigeracion:checked ~ #filtros .sub-refrigeracion,
+#cat-coolers-fan:checked ~ #filtros .sub-refrigeracion,
+#cat-coolers-cpu:checked ~ #filtros .sub-refrigeracion,
 #cat-perifericos:checked ~ #filtros .sub-perifericos,
 #cat-teclados:checked ~ #filtros .sub-perifericos,
 #cat-mouses:checked ~ #filtros .sub-perifericos,
@@ -427,6 +434,9 @@ address { font-style: normal; }
 #cat-almacenamiento:checked ~ #filtros label[for="cat-almacenamiento"] .flecha,
 #cat-discos-rigidos:checked ~ #filtros label[for="cat-almacenamiento"] .flecha,
 #cat-discos-solidos:checked ~ #filtros label[for="cat-almacenamiento"] .flecha,
+#cat-refrigeracion:checked ~ #filtros label[for="cat-refrigeracion"] .flecha,
+#cat-coolers-fan:checked ~ #filtros label[for="cat-refrigeracion"] .flecha,
+#cat-coolers-cpu:checked ~ #filtros label[for="cat-refrigeracion"] .flecha,
 #cat-perifericos:checked ~ #filtros label[for="cat-perifericos"] .flecha,
 #cat-teclados:checked ~ #filtros label[for="cat-perifericos"] .flecha,
 #cat-mouses:checked ~ #filtros label[for="cat-perifericos"] .flecha,

@@ -69,3 +69,5 @@ Predicciones:
 34-Voy a eliminar la opcion "Categorias" del nav que esta en el header y tambien a centrar el logo y el nav mas cerca del buscador.
 
 35-Voy a solucionar el problema del logo, que dejo de ser responsive.
+
+36-Voy a agregar una categoria nueva que se va a llamar Notebooks y sub-categorias a refrigeracion que van a ser Coolers Fan y Coolers CPU y a Perifericos que va a ser Webcam.
